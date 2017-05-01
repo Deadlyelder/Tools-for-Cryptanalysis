@@ -1,0 +1,84 @@
+#! /bin/bash
+
+# ./process sha256 24 500 rp
+# generate files for sha256 24 rounds and 500 fixed bits at random
+
+source ./fix.sh
+
+if [ $# -lt 3 ] ; then
+    echo "usage: $0 hash_name round_number fixed_bits [fix_method...]" >&2
+    exit 1;
+fi
+
+SOLVER=${SOLVER:-./SATsolve}
+
+HASH=$1
+R=$2
+K=$3
+shift 3
+
+# check arguments
+for arg in $R $K ; do
+    if echo $arg | grep -q '[^0-9]' ; then
+        echo "$0: $arg: bad argument (should be positive integer)" >&2
+        exit 1
+    fi
+done
+
+DIR=$HASH/r$R
+
+# z  : zero bits
+# zp : zero bits at random positions
+# i  : one bits
+# ip : one bits at random positions
+# m  : message bits
+# mp : message bits at random positions
+# r  : random bits
+# rp : random bits at random positions
+ALL="z zp i ip m mp r rp"
+
+# check fix methods
+FIX=$@
+for i in $FIX ; do
+    OK=
+    for j in $ALL ; do
+        if [ $i = $j ] ; then
+            OK=1
+            break
+        fi
+    done
+    if [ -z "$OK" ] ; then
+        echo "$0: $i is not a valid fix method" >&2
+        exit 1
+    fi
+done
+
+if [ ! -f "$DIR/F.anf" ] ; then
+    ./generate "$HASH" "$R"
+fi
+
+if [ -f "$DIR/F.anf" ] ; then
+    for i in $FIX ; do
+        if [ ! -f "$DIR/$i.anf" ] ; then
+            echo "$0: $DIR/$i.anf must be created first" >&2
+            continue
+        fi
+        FILE=$(fix "$HASH" "$R" "$K" $i)
+        SLV=$(basename ${SOLVER%% *})
+        mkdir -p "$DIR/log$i/$SLV"
+        DAT=$DIR/log$i/$SLV/$K
+        OUT=$DAT.out$SUFFIX
+        LOG=$DAT.log$SUFFIX
+        echo -n "----------------------------------------" | tee "$LOG"
+        echo "----------------------------------------" | tee -a "$LOG"
+        echo "processing $HASH $R rounds, $K variables fixed ($i) with $SLV" | \
+            tee -a "$LOG"
+        { time -p $SOLVER "$FILE" || \
+            { echo "failure" >&2 ; rm -f "$FILE" ; } ; } 2>>"$LOG" | \
+            tee "$OUT" 
+        cat "$LOG" >&2
+        rm -f "$FILE"
+        grep -q '^failure$' "$LOG" && exit 1
+        sed -n '/^user/s/.* //p' "$LOG" >>"$DAT"
+    done
+fi

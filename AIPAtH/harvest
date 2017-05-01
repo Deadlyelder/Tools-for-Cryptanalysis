@@ -1,0 +1,75 @@
+#! /bin/bash
+
+if [ "$1" = png ] ; then
+    X=1
+    shift
+fi
+
+average()
+{
+    C=${2:-1}
+    {
+        n=0
+        echo "scale = 6"
+        echo -n "$C * (0.0"
+        while read i ; do
+            echo -n " + $i"
+            ((n++))
+        done <"$1"
+        echo ") / $n"
+    } | BC_LINE_LENGTH=512 bc | sed -r 's/(\.[0-9]{6})[0-9]*/\1/'
+}
+
+for d in "$@" ; do
+    [ -d "$d" ] || continue
+    for r in "$d"/r* ; do
+        [ -d "$r" ] || continue
+        {
+            PNG=$r/timing.png
+            if [ -n "$X" ] ; then
+                echo "set term png"
+                echo "set output \"$PNG\""
+            fi
+            cat <<EOF
+set title "$d ${r##*r} rounds"
+set xlabel "nb. fixed variables"
+set ylabel "time"
+set logscale y 2
+set format y "2^%L"
+EOF
+            NEXT=
+            for log in "$r"/log* ; do
+                [ -d "$log" ] || continue
+                for solver in "$log"/* ; do
+                    [ -d "$solver" ] || continue
+                    DAT=$solver/timing.dat
+                    : >"$DAT"
+                    for k in "$solver"/* ; do
+                        [ -f "$k" ] || continue
+                        if basename "$k" | grep -q '[^0-9]' ; then
+                            continue;
+                        fi
+                        if [ -z "$expected" ] ||
+                            [ $(wc -l <"$k") -eq "$expected" ] ; then
+                            kk=$(basename $k)
+                            echo $kk $(average "$k" "2^$kk") >>"$DAT"
+                        fi
+                    done
+                    sort -n -k1,1 -o "$DAT" "$DAT"
+                    if [ -z "$NEXT" ] ; then
+                        echo -n "plot "
+                    else
+                        echo -n ", "
+                    fi
+                    echo -n "\"$DAT\" title \""
+                    echo -n "${log##*log} with $(basename "$solver")"
+                    echo -n "\" with lines"
+                done
+                NEXT=1
+            done
+            echo
+            echo pause mouse any
+        } | gnuplot 2>/dev/null || \
+            echo "one data file in $r is probably empty" >&2
+    done
+done

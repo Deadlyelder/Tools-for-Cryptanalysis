@@ -1,0 +1,97 @@
+#! /bin/bash
+
+average()
+{
+    {
+        n=0
+        echo "scale = 6"
+        echo -n "(0.0"
+        while read i ; do
+            echo -n " + $i"
+            ((n++))
+        done <"$1"
+        echo ") / $n"
+    } | bc
+}
+
+delta=${delta:-0}
+
+for d in "$@" ; do
+    [ -d "$d" ] || continue
+    for r in "$d"/r* ; do
+        [ -d "$r" ] || continue
+        ls "$r"/log* 2> /dev/null >/dev/null || continue
+        {
+            NEXT=
+            TMP=$(mktemp)
+            cat <<EOF
+\documentclass{minimal}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\begin{document}
+\begin{tikzpicture}
+EOF
+            for log in "$r"/log* ; do
+                [ -d "$log" ] || continue
+                case $log in
+                    *logi*) col=black;;
+                    *logr*) col=blue;;
+                    *logz*) col=green;;
+                    *logm*) col=red;;
+                esac
+                for solver in "$log"/* ; do
+                    [ -d "$solver" ] || continue
+                    TMPDAT=$(mktemp)
+                    for k in "$solver"/* ; do
+                        [ -f "$k" ] || continue
+                        if basename "$k" | grep -q '[^0-9]' ; then
+                            continue;
+                        fi
+                        if [ -z "$expected" ] ||
+                            [ $(wc -l <"$k") -eq "$expected" ] ; then
+                            kk=$(basename $k)
+                            echo $kk $(average "$k") >>"$TMPDAT"
+                        fi
+                    done
+                    sort -n -k1,1 -o "$TMPDAT" "$TMPDAT"
+                    v0=$(tail -n 1 "$TMPDAT" | cut -d ' ' -f 2)
+                    DAT="$solver"/timing.tikz
+                    : >"$DAT"
+                    while read n v ; do
+                        echo "$((n-delta))" $(echo -e "scale=6\n$((n-delta)) + l($v / $v0) / l(2)" \
+                            | bc -l) >>"$DAT"
+                    done <"$TMPDAT"
+                    rm "$TMPDAT"
+                    cat "$DAT" >>"$TMP"
+                    echo "  % ${log##*log} with $(basename "$solver")"
+                    echo "  \\draw[color=$col] plot file {$PWD/$DAT};"
+                done
+                NEXT=1
+            done
+            minX=$(($(sort -n -k1,1 "$TMP" | head -n 1 | \
+                cut -d ' ' -f 1) - 1))
+            if [[ $minX != *[02468] ]] ; then
+                ((minX--))
+            fi
+            maxX=$(($(sort -n -k1,1 "$TMP" | tail -n 1 | \
+                cut -d ' ' -f 1) + 1))
+            minY=$(($(sort -n -k2,2 "$TMP" | head -n 1 | \
+                cut -d ' ' -f 2 | sed 's/\..*//') - 2))
+            if [[ $minY != *[02468] ]] ; then
+                ((minY--))
+            fi
+            cat <<EOF
+  \foreach \x in {$minX,$((minX+2)),...,$maxX} \draw (\x,$minY) node[below]{\x};
+  \foreach \y in {$minY,$((minY+2)),...,$maxX} \draw ($minX,\y) node[left]{2\textsuperscript{\y}};
+  \draw[->,>=latex] ($minX,$minY) to ($maxX,$minY) node[right] {n fixé};
+  \draw[->,>=latex] ($minX,$minY) to ($minX,$maxX) node[above] {nb. ops.};
+\end{tikzpicture}
+\end{document}
+EOF
+            rm "$TMP"
+        } >"out/$d"_"${r##*r}".tex
+    done
+done

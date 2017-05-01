@@ -1,0 +1,13 @@
+#! /bin/bash
+
+if [ "${0##*_}" != "do" ] ; then
+    echo "$0: bad script name, should be called <solver_name>_do" >&2
+    exit 2
+fi
+
+if [ $# -gt 4 ] ; then
+    echo "$0: only one fix method is allowed" >&2
+    exit 1
+fi
+
+SOLVER="${0%_do}" ./process "$@"

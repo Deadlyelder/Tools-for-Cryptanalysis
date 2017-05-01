@@ -1,0 +1,5 @@
+#! /bin/bash
+
+FILE=data/data-$(date +%s).tar.gz
+tar czf $FILE $(find . -type d -name 'log*') && \
+    echo $FILE successfully created.

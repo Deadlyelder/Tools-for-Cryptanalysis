@@ -101,5 +101,14 @@ SYMAES is a software tool that generates a system of polynomials in GF(2), corre
 * [Official website](http://www.eit.lth.se/index.php?id=260&uhpuid=dhs.pas&hpuid=584&L=1)
 * Direct download: [Windows Executeable](http://www.eit.lth.se/fileadmin/eit/home/dhs.pas/win_exec.zip), [Linux Executable](http://www.eit.lth.se/fileadmin/eit/home/dhs.pas/linux_exec.zip), [C code](http://www.eit.lth.se/fileadmin/eit/home/dhs.pas/source.zip)
  
-A simple tool for the automatic algebraic cryptanalysis of a large array of stream and block ciphers. Three tests have been implemented and the best results have led to continued work on a computational cluster. 
+A simple tool for the automatic algebraic cryptanalysis of a large array of stream and block ciphers. Three tests have been implemented and the best results have led to continued work on a computational cluster.
+
+## Algebraic Preimage Attack on Hash functions (AlPAtH)
+
+*A software framework AlPAtH (Algebraic Preimage Attack on Hash functions) to run algebraic attacks on hash function*
+
+* Developer: Luk Bettale
+* [Official website](https://www.lukbettale.ze.cx/alpath/)
+
+AlPAtH is a software framework to run algebraic attacks on hash functions. This framework is intended to run algebraic attacks on hash functions, but could be extended to any kind of ciphers (block, stream). It provides a framework to generate equations, solve these equations and interpret the results.
 

@@ -1,0 +1,14 @@
+#! /bin/bash
+
+FILES=$(find . -type d -name 'log*')
+if [ -z "$FILES" ] ; then
+    echo "already cleaned";
+    exit 0;
+else
+    echo "$FILES"
+fi
+
+read -p "remove all these directories (y/n) ? " yes
+if [ "$yes" = y ] ; then
+    rm -rf $FILES
+fi

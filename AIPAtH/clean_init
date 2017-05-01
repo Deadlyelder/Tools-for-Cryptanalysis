@@ -1,0 +1,9 @@
+#! /bin/bash
+
+DIRS=$(ls -d */r* 2>/dev/null) || { echo already initialized; exit 0; }
+
+echo $DIRS
+read -p "remove all these directories (y/n) ? " yes
+if [ "$yes" = y ] ; then
+    rm -rf $DIRS
+fi

@@ -1,0 +1,258 @@
+What is the purpose of this framework ?
+
+This framework is intended to run algebraic attacks on hash functions,
+but could be extended to any kind of ciphers (block, stream). It
+provides a framework to generate equations, solve these equations and
+interpret the results. 
+
+
+What can this framework do for me ?
+
+This framework can do several things.
+
+1) generate polynomial systems for a preimage attack on hash
+   functions. A solution to this system should give a preimage of the
+   hash of the message "Hello world\n".
+
+2) run solvers on these systems for a given hash function number of
+   round, a given amount of fixed variables, a given method for fixing
+   variables. For instance, you could try to find a preimage on SHA-1
+   for 48 rounds with 300 message bits fixed at random.
+
+3) produce log on these results, mainly the time needed by the solving.
+
+4) produce plots on the solving time according to number of fixed
+   variables (directly, as png or as tikz).
+
+There is 8 ways to fix k variables:
+- z: message bits 1 to k are fixed to zero
+- zp: k message bits (randomly picked) are fixed to zero
+- i: message bits 1 to k are fixed to one
+- ip: k message bits (randomly picked) are fixed to one
+- m: message bits 1 to k are fixed to the correct bits
+- mp: k message bits (randomly picked) are fixed to the correct bits
+- r: message bits 1 to k are fixed to random values
+- rp: k message bits (randomly picked) are fixed to random values
+
+
+
+What cannot this framework do for me ?
+
+- You have to first write the code to generate the equations for each
+  hash functions. Some are already provided:
+  md5, sha1, sha256, sha512, ripemd128 and ripemd160
+  The way you generate equations does not matter as long as your program
+  respects the interface provided in the file `interface.m'. It contains
+  the only 3 magma functions you should implement.
+
+- You have to provide a solving software that take as input a file in
+  ANF format (see the README file of the anf2cnf software). It is also
+  yours to be sure that the solving method is correct, as this
+  framework only cares about the time it takes, not the solution. To
+  read a file in ANF format, you may use the libanf2cnf C library that
+  provide a function to parse such files, and a data structure to
+  handle boolean polynomial systems. Such solvers are already provided:
+  - GBsolve: it uses libanf2cnf to parse the input, and use magma to
+    solve the polynomial system
+  - SATsolve: it uses libanf2cnf to parse the input, propagates some
+    variables at ANF level, and convert the polynomial system into CNF
+    SAT entry. It then use the cryptominisat solver to solve the
+    boolean system.
+  - looping: it does pretty much the same as SATsolve, except that it
+    stops the SAT-solver after some times and reruns the solving after
+    propagating variables at ANF level again.
+
+
+How do I use this framework ?
+
+We give an example to illustrate this point. Let us say that we want
+to know the time of an algebraic preimage attack on 48 rounds SHA-1
+when 500 (over 512) correct message bits (at random positions) are
+fixed. Let us say that we want to solve the system using
+`SATsolve'. Then, one has just to run
+
+./SATsolve_do sha1 48 500 mp
+
+The program automatically generate the equations for 48 rounds SHA-1
+(if they were not already generated) dumped in ANF format. The system
+is then passed to the SATsolve program which tries to solve the
+system. After that, you can see that the `sha1/r48' directory has been
+created and populated. In particular, you can see in the directory
+`sha1/r48/logmp/SATsolve/' the files 500, 500.out and 500.log which
+contain respectively the computation time, the computation standard
+output and the computation error output. If you run the same command
+again "./SATsolve_do sha1 48 500 mp", the previous files will have
+extra lines corresponding to the new computation.
+
+It could be tedious to run the computation for a large amount of fixed
+variables. You shall use the `sample' program. For instance, if you
+want to try fixing variables at random from 510 variables fixed and
+decreasing this number until 0 or until the computation is manually
+stop. Just run
+
+./sample SATsolve_do sha1 48 500 rp
+
+You can increase the number of trials for each number of fixed
+variables by affecting correspondingly an environment variable called
+TRIALS. For instance:
+
+export TRIALS=4
+./sample SATsolve_do sha1 48 500 rp
+
+After you have done
+several computations, you may want to plot the graphics corresponding
+to the computation time in function of the number of fixed
+variables. This can be automatically generated with the `harvest' and
+`harvest_to_tikz' programs. Just type
+
+./harvest sha1
+
+and you will the plots of every timinigs you have done so far will be
+displayed. If you want to generate images in png format, you can run
+
+./harvest png sha1
+
+they will be located in the `out' directory.
+
+If you need tikz plots, you shall use the `harvest_to_tikz' program as
+follows
+
+./harvest_to_tikz sha1
+
+Note that both programs may take several hash functions name as
+arguments.
+
+Finally, you can save all your timings (everything located in a log*
+directory) with the `save' program.
+
+./save
+
+To remove every generated log files, you may use the `clean'
+program. To remove everything, including the systems generated, you
+may use the `clean_init' program. Your directory will be just as it
+was before any modification (except what is contained in the `out' and
+`data' directories.
+
+
+What is provided in this framework ?
+
+This framework is a collection of magma programs, shell scripts and C
+programs. Here is how the framework is organized.
+It has several shell scripts
+
+- clean: remove log files
+
+- clean_init: remove all generated files and directory (including log files)
+
+- do_process: this script has to be symlinked to be used properly. It
+  is used to solve one system. It is a wrapper over `process'. Cannot
+  be used directly
+
+- generate:
+  usage: ./generate hash_name round_number     
+  generates the equations for a hash function, for a given number of
+  rounds it is used by the `process' program if the equations are not
+  already generated
+
+- getsystem:
+  usage: ./getsystem hash_name round_number fixed_bits_number fix_method
+  returns the corresponding system in a readable format (magma)
+
+- harvest:
+  usage: ./harvest hash_name1 hash_name2 ...
+  plot the graphics corresponding to the given hash functions. With
+  the png option (as first argument), generates png image in the `out'
+  directory
+
+- harvest_to_tikz:
+  usage: ./harvest hash_name1 hash_name2 ...
+  similar to harvest, but generates tikz files in the `out' directory
+
+- hash:
+  usage: ./hash hash_name [round_number]
+  apply the hash function with the given number of rounds to the
+  standard entry (defaults to the max number of round)
+
+- process:
+  usage: ./process hash_name round_number fixed_bits_number fix_method
+  try to solve the corresponding system with the solver in the $SOLVER
+  variable (defaults to SATsolve).
+
+- sample:
+  usage: ./sample solver_do hash_name round_number fix_method max_fix
+  calls solver_do with the corresponding parameters from max_fix
+  number of fixed variables to 0 (or when the program is manually
+  stopped)
+
+- save: saves anything that has been done (in hash_name/log*) into an
+  archive in the `data' directory. To reuse a previously saved data,
+  juste uncompress a data file when inside the root directory.
+
+
+What is needed to use this framework ?
+
+- magma: this is a proprietary computational algebra system. More
+  information on this software may be found at
+  http://magma.maths.usyd.edu.au/magma/
+
+- anf2cnf: this a free software. More precisely, only the library
+  libanf2cnf.so shipped with anf2cnf is needed. These can be found at
+  http://www-salsa.lip6.fr/~bettale/anf2cnf.html
+
+- cryptominisat: this is a free SAT-solver by Mate Soos. It is
+  available at
+  http://www.msoos.org/cryptominisat2
+
+- bash, gcc, make: free software, probably already installed in your
+  distribution
+
+Note that the executables `magma' and `cryptominisat' have to be
+available in your PATH.
+
+
+How do I add a new hash function to the framework ?
+
+Just create a directory named after the hash function, and put inside
+a magma file called `main.m'. It should contain at least the 3 functions
+described in the file `interface.m'.
+
+Note that this framework is shipped with 6 hash functions:
+md5, sha1, sha256, sha512, rmd128 and rmd160.
+
+
+How do I add a new solver to the framework ?
+
+Your solver has to take as input an ANF file (see the README of
+anf2cnf). Just put your executable file in the root directory. Assume
+that it is called `mysolver'. You have to create create a new symlink
+to `do_process' caled <solver name>_do. For instance:
+
+ln -s do_process mysolver_do
+
+Note that this framework is shipped with 3 solvers:
+GBsolve, SATsolve and looping.
+
+
+What does AlPatH means ?
+
+AlPAtH is a contraction of Algebraic Preimage Atack on Hash
+functions. If you think the name sucks, you may suggest a better one.
+
+
+What is the license of this framework ?
+
+This framework is free software (GPLv3), but it uses a proprietary
+program (magma) as a building block.
+
+
+Why this framework is not in Sage ?
+
+It is a project to port this framework in Sage. If someone is
+interested, feel free to do it.
+
+
+How do I do <something> in this framework ?
+
+For any question that is not answered here, please feel free to send
+me your question. Maybe the feature you ask for is already
+implemented, but not documented (yet).

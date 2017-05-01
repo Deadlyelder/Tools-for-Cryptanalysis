@@ -1,0 +1,20 @@
+#! /bin/bash
+
+# ./generate sha256 64
+# generate files for sha256 64 rounds (using $MAGMA)
+
+if [ $# -lt 2 ] ; then
+    echo "usage: $0 hash_name round_number" >&2
+    exit 1;
+fi
+
+HASH=$1
+R=$2
+MAGMA=${MAGMA:-magma}
+
+if [ ! -f "$HASH/main.m" ] ; then
+    echo "$0: $HASH: unknown hash function" >&2
+    exit 1
+fi
+
+exec "$MAGMA" -b name:="$HASH" r:="$R" "$HASH/main.m" generate.m

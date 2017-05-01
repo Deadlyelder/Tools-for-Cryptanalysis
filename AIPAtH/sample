@@ -1,0 +1,32 @@
+#! /bin/bash
+
+# ./sample SATsolve_do sha256 48 rp 508
+# samples $TRIALS runs of SATsolve on sha256 48 rounds starting from
+# 508 variables fixed
+
+TRIALS=${TRIALS:-1}
+
+if [ $# -lt 5 ] ; then
+    echo "usage: $0 solver_do hash_name round_number fix_method max_fix" >&2
+    exit 1
+fi
+
+if [ ! -f "$1" -o ! -x "$1" ] ; then
+    echo "$0: $1 is not an executable"
+    echo "usage: $0 solver_do hash_name round_number fix_method max_fix" >&2
+    exit 1
+fi
+
+PROG=$1
+shift
+
+HASH=$1
+R=$2
+FIX=$3
+MAX=$4
+
+for k in $(seq $MAX -1 0) ; do
+    for t in $(seq 1 $TRIALS) ; do
+        $PWD/$PROG "$HASH" "$R" "$k" "$FIX" || exit 1
+    done
+done

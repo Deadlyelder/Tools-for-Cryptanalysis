@@ -1,0 +1,8 @@
+#! /bin/bash
+
+if [ $# -gt 4 ] ; then
+    echo "$0: only one fix method is allowed" >&2
+    exit 1
+fi
+
+SOLVER="parseanf" ./process "$@"
