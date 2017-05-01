@@ -137,3 +137,13 @@ CADO-NFS (Crible Algebrique: Distribution, Optimisation - Number Field Sieve) is
 * [Official repository](https://github.com/cr-marcstevens/sha1collisiondetection)
 
 sha1collisiondetection library and command line tool is designed as near drop-in replacements for common SHA-1 libraries and sha1sum. It will compute the SHA-1 hash of any given file and additionally will detect cryptanalytic collision attacks against SHA-1 present in each file. It is very fast and takes less than twice the amount of time as regular SHA-1.
+
+## S-function Toolkit
+
+Toolkit for differential cryptanalysis of S-functions
+
+* Developers: Nicky Mouha, Vesselin Velichkov, Christophe De Cannière, Bart Preneel
+* [Direct download](http://www.ecrypt.eu.org/tools/uploads/s-function_toolkit_v2.zip)
+* [Paper](http://www.cosic.esat.kuleuven.be/publications/article-1473.pdf)
+
+An increasing number of cryptographic primitives use operations such as addition modulo 2n, multiplication by a constant and bitwise Boolean functions as a source of non-linearity. In NIST’s SHA-3 competition, this applies to 6 out of the 14 second-round candidates. An S-function is a function that calculates the i-th output bit using only the inputs of the i-th bit position and a finite state S[i]. Although S-functions have been analyzed before, this toolkit is the first to present a fully general and efficient framework to determine their differential properties. A precursor of this framework was used in the cryptanalysis of SHA-1. 
