@@ -122,18 +122,19 @@ The Lex Toolkit is a collection of Python programs for the computer algebra syst
 
 ## Yafu (Yet Another Factorization Utility)
 
-* Developer: 
 * [Official website](https://sites.google.com/site/bbuhrow/)
 * [Official repository](https://sourceforge.net/projects/yafu/)
 
-YAFU (with assistance from other free software) uses the most powerful modern algorithms (and implementations of them) to factor input integers in a completely automated way.
+YAFU (with assistance from other free software) uses the most powerful modern algorithms (and implementations of them) to factor input integers in a completely automated way. Usefull for RSA attacks.
 
 ## Msieve
 
-* Developer: 
 * [Official repositoy](https://sourceforge.net/projects/msieve/)
 
-Msieve is a C library implementing a suite of algorithms to factor large integers. It contains an implementation of the SIQS and GNFS algorithms.
+Msieve is a C library implementing a suite of algorithms to factor large integers. It contains an implementation of the SIQS and GNFS algorithms. Usefull for RSA attacks.
 
-## 
+## PARI/GP
 
+* [Official website](https://pari.math.u-bordeaux.fr/)
+
+PARI/GP is a widely used computer algebra system designed for fast computations in number theory (factorizations, algebraic number theory, elliptic curves...), but also contains a large number of other useful functions to compute with mathematical entities such as matrices, polynomials, power series, algebraic numbers etc., and a lot of transcendental functions. PARI is also available as a C library to allow for faster computations.
