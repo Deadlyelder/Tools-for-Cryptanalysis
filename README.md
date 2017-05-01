@@ -138,3 +138,9 @@ Msieve is a C library implementing a suite of algorithms to factor large integer
 * [Official website](https://pari.math.u-bordeaux.fr/)
 
 PARI/GP is a widely used computer algebra system designed for fast computations in number theory (factorizations, algebraic number theory, elliptic curves...), but also contains a large number of other useful functions to compute with mathematical entities such as matrices, polynomials, power series, algebraic numbers etc., and a lot of transcendental functions. PARI is also available as a C library to allow for faster computations.
+
+## CADO-NFS
+
+* [Official website](http://cado-nfs.gforge.inria.fr)
+
+CADO-NFS (Crible Algebrique: Distribution, Optimisation - Number Field Sieve) is a complete implementation in C/C++ of the Number Field Sieve (NFS) algorithm for factoring integers. It consists in various programs corresponding to all the phases of the algorithm, and a general script that runs them, possibly in parallel over a network of computers.

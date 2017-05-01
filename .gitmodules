@@ -10,3 +10,6 @@
 [submodule "lextool"]
 	path = lextool
 	url = https://github.com/vesselinux/lextool
+[submodule "cado-nfs"]
+	path = cado-nfs
+	url = https://scm.gforge.inria.fr/anonscm/git/cado-nfs/cado-nfs.git
