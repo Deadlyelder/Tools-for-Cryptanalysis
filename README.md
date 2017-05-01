@@ -24,7 +24,7 @@ This toolkit can be used to prove the security of cryptographic ciphers against 
 *Framework for MD5 & SHA-1 Differential Path Construction and Chosen-Prefix Collisions for MD5*
 
 * Developer: Marc Stevens
-* Repo
+* [Official website](https://marc-stevens.nl/p/hashclash/index.php)
 
 This framework contains tools for the constructions of differential paths for MD5 and SHA-1, including chosen-prefix collisions for MD5.
 
@@ -65,15 +65,6 @@ This tool computes linear hulls for the original PRESENT cipher. It confirms and
 * [Official website](http://www.iaik.tugraz.at/content/research/krypto/codingtool/)
 
 The CodingTool library is a collection of tools to use techniques from coding theory in cryptanalysis. The core part is an implementation of a probabilistic algorithm to search for code words with low Hamming weight. Additional functionalities like shortening and puncturing of a linear code or adding a weight to each bit of a code word are implemented. Furthermore, the library provides data structures to assist the user in creating a linear code for a specific problem. An easy to use interface to the provided algorithms, powerful data structures and a command line parser reduces the implementation work of a cryptanalyst to a minimum.
-
-## Sage
-
-*Free open-source mathematics especially number-theory software system, also contains many modules for cryptography*
-
-* [Download](http://www.sagemath.org/)
-* [Documentation](http://www.sagemath.org/doc/reference/cryptography.html)
-
-Sage is a free open-source mathematics software system licensed under the GPL. It combines many existing open-source packages into a common Python-based interface. It also contains modules to perform both basic and more advanced computations in cryptography and cryptanalysis.
 
 ## Grain of Salt
 
@@ -132,12 +123,6 @@ YAFU (with assistance from other free software) uses the most powerful modern al
 * [Official repository](https://sourceforge.net/projects/msieve/)
 
 Msieve is a C library implementing a suite of algorithms to factor large integers. It contains an implementation of the SIQS and GNFS algorithms. Usefull for RSA attacks.
-
-## PARI/GP
-
-* [Official website](https://pari.math.u-bordeaux.fr/)
-
-PARI/GP is a widely used computer algebra system designed for fast computations in number theory (factorizations, algebraic number theory, elliptic curves...), but also contains a large number of other useful functions to compute with mathematical entities such as matrices, polynomials, power series, algebraic numbers etc., and a lot of transcendental functions. PARI is also available as a C library to allow for faster computations.
 
 ## CADO-NFS
 
