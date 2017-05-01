@@ -1,0 +1,11 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_code_word_file_8h.html" title="This is the header file of the class CodeWordFile." alt="" coords="144,83,309,112"/>
+<area shape="rect" id="node8" href="$_low_weight_search_8h.html" title="This is the header file of the class LowWeightSearch." alt="" coords="417,83,607,112"/>
+<area shape="rect" id="node21" href="$_code_word_8cpp.html" title="This file contains the implementation of the class CodeWord." alt="" coords="655,83,785,112"/>
+<area shape="rect" id="node6" href="$_code_word_file_8cpp.html" title="This file contains the implementation of the class CodeWordFile." alt="" coords="5,160,155,189"/>
+<area shape="rect" id="node10" href="$allinone_8cpp.html" title="Example creating a code and searchin for code words." alt="" coords="179,160,328,189"/>
+<area shape="rect" id="node12" href="$search_8cpp.html" title="Example for finding low Hamming weight words." alt="" coords="352,160,499,189"/>
+<area shape="rect" id="node14" href="$sha1me_8cpp.html" title="Example for creating a code matrix." alt="" coords="523,160,675,189"/>
+<area shape="rect" id="node16" href="$shortening_8cpp.html" title="Example for finding code words producing a collison." alt="" coords="699,160,864,189"/>
+<area shape="rect" id="node19" href="$_low_weight_search_8cpp.html" title="This file contains the implementation of the class LowWeightSearch." alt="" coords="888,160,1061,189"/>
+</map>

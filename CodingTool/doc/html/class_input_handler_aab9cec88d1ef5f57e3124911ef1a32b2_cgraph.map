@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_parameters.html#ae4a719b0c487fa4a1eb2d8367f30a59c" title="Returns all integer parameters." alt="" coords="237,5,461,35"/>
+<area shape="rect" id="node5" href="$class_parameters.html#adc153510d28c0ee4c9c9ccfe7fcb0143" title="Returns all string parameters." alt="" coords="240,59,459,88"/>
+<area shape="rect" id="node7" href="$class_input_handler.html#a928597d43d3cdb9833633f36d609883b" title="Prints the usage of a program." alt="" coords="267,112,432,141"/>
+<area shape="rect" id="node9" href="$class_parameters.html#a19d82c28b09e344708fdf0f90068be54" title="Returns all help texts." alt="" coords="509,112,685,141"/>
+</map>

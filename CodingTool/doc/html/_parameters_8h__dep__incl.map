@@ -1,0 +1,11 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_input_handler_8h.html" title="This is the header file of the class InputHandler." alt="" coords="568,83,725,112"/>
+<area shape="rect" id="node15" href="$_low_weight_search_8h.html" title="This is the header file of the class LowWeightSearch." alt="" coords="331,83,520,112"/>
+<area shape="rect" id="node24" href="$_parameters_8cpp.html" title="This file contains the implementation of the class Parameters." alt="" coords="749,83,885,112"/>
+<area shape="rect" id="node5" href="$allinone_8cpp.html" title="Example creating a code and searchin for code words." alt="" coords="203,160,352,189"/>
+<area shape="rect" id="node7" href="$search_8cpp.html" title="Example for finding low Hamming weight words." alt="" coords="376,160,523,189"/>
+<area shape="rect" id="node9" href="$sha1me_8cpp.html" title="Example for creating a code matrix." alt="" coords="547,160,699,189"/>
+<area shape="rect" id="node11" href="$shortening_8cpp.html" title="Example for finding code words producing a collison." alt="" coords="723,160,888,189"/>
+<area shape="rect" id="node13" href="$_input_handler_8cpp.html" title="This file contains the implementation of the class InputHandler." alt="" coords="912,160,1053,189"/>
+<area shape="rect" id="node22" href="$_low_weight_search_8cpp.html" title="This file contains the implementation of the class LowWeightSearch." alt="" coords="5,160,179,189"/>
+</map>

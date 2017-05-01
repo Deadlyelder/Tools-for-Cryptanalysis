@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_low_weight_search.html#acaaef1508ddc2e7e7f7e348ddc92ac3b" title="An algorithm to find code words with low Hamming weight." alt="" coords="553,186,791,216"/>
+<area shape="rect" id="node5" href="$class_low_weight_search.html#a72bb60e55f6d0f12d3a9a79d74c97b73" title="Transforms a check matrix to a generator matrix." alt="" coords="241,53,484,82"/>
+<area shape="rect" id="node7" href="$class_low_weight_search.html#aacb7e238efa82a8f81c865f8f1c4d96a" title="Forces specific columns of the given matrix to zero." alt="" coords="249,106,476,136"/>
+<area shape="rect" id="node9" href="$class_low_weight_search.html#ac2ed6f6b8bc068c740bee5d0bf90e8ba" title="Transforms the matrix to reduced row echelon form." alt="" coords="260,160,465,189"/>
+<area shape="rect" id="node12" href="$class_code_matrix.html#a8bedafbb5c302ffa92ce00044df2ea4c" title="Returns true if the matrix is a systematic generator matrix." alt="" coords="277,213,448,242"/>
+<area shape="rect" id="node15" href="$class_low_weight_search.html#a582094dd9148d1a72c1f4c585c68f4bd" title="Randomly permutes the columns of the given matrix." alt="" coords="221,266,504,296"/>
+<area shape="rect" id="node18" href="$class_code_matrix.html#afeded7d0b810a252532903bdb95e3b31" title="Returns the transposed matrix." alt="" coords="285,320,440,349"/>
+</map>

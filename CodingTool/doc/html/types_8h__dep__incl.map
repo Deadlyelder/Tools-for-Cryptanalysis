@@ -1,0 +1,22 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$allinone_8cpp.html" title="Example creating a code and searchin for code words." alt="" coords="885,315,1035,344"/>
+<area shape="rect" id="node5" href="$search_8cpp.html" title="Example for finding low Hamming weight words." alt="" coords="1224,315,1371,344"/>
+<area shape="rect" id="node7" href="$sha1me_8cpp.html" title="Example for creating a code matrix." alt="" coords="323,315,475,344"/>
+<area shape="rect" id="node9" href="$shortening_8cpp.html" title="Example for finding code words producing a collison." alt="" coords="696,315,861,344"/>
+<area shape="rect" id="node11" href="$_code_matrix_8h.html" title="This is the header file of the class CodeMatrix." alt="" coords="279,83,428,112"/>
+<area shape="rect" id="node16" href="$_code_word_8h.html" title="This is the header file of the class CodeWord." alt="" coords="427,160,573,189"/>
+<area shape="rect" id="node18" href="$_code_word_file_8h.html" title="This is the header file of the class CodeWordFile." alt="" coords="5,237,171,267"/>
+<area shape="rect" id="node23" href="$_low_weight_search_8h.html" title="This is the header file of the class LowWeightSearch." alt="" coords="669,237,859,267"/>
+<area shape="rect" id="node35" href="$_hamming_weight_8h.html" title="This is the header file defining functions to compute the Hamming weight of words..." alt="" coords="581,83,763,112"/>
+<area shape="rect" id="node40" href="$_input_handler_8h.html" title="This is the header file of the class InputHandler." alt="" coords="907,237,1064,267"/>
+<area shape="rect" id="node49" href="$_parameters_8h.html" title="This is the header file of the class Parameters." alt="" coords="939,160,1091,189"/>
+<area shape="rect" id="node55" href="$_random_number_generator_8h.html" title="This is the header file of the class RandomNumberGenerator." alt="" coords="1349,83,1584,112"/>
+<area shape="rect" id="node14" href="$_code_matrix_8cpp.html" title="This file contains the implementation of the class CodeMatrix." alt="" coords="269,160,403,189"/>
+<area shape="rect" id="node32" href="$_code_word_8cpp.html" title="This file contains the implementation of the class CodeWord." alt="" coords="435,237,565,267"/>
+<area shape="rect" id="node21" href="$_code_word_file_8cpp.html" title="This file contains the implementation of the class CodeWordFile." alt="" coords="13,315,163,344"/>
+<area shape="rect" id="node30" href="$_low_weight_search_8cpp.html" title="This file contains the implementation of the class LowWeightSearch." alt="" coords="499,315,672,344"/>
+<area shape="rect" id="node38" href="$_hamming_weight_8cpp.html" title="This file implements the Hamming weight functions." alt="" coords="597,160,763,189"/>
+<area shape="rect" id="node46" href="$_input_handler_8cpp.html" title="This file contains the implementation of the class InputHandler." alt="" coords="1059,315,1200,344"/>
+<area shape="rect" id="node53" href="$_parameters_8cpp.html" title="This file contains the implementation of the class Parameters." alt="" coords="1088,237,1224,267"/>
+<area shape="rect" id="node57" href="$_random_number_generator_8cpp.html" title="This file contains the implementation of the class RandomNumberGenerator." alt="" coords="1357,160,1576,189"/>
+</map>

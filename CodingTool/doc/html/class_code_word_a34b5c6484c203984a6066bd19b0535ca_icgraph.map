@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_low_weight_search.html#a72bb60e55f6d0f12d3a9a79d74c97b73" title="Transforms a check matrix to a generator matrix." alt="" coords="200,5,443,35"/>
+<area shape="rect" id="node5" href="$class_code_word.html#a9a6ac5f18fdfc4b1d8db471502d5b39f" title="Deletes a bit at the given position." alt="" coords="247,59,396,88"/>
+<area shape="rect" id="node7" href="$class_code_matrix.html#ae9be4cabd8028bc99fd7eaeb06c380a1" title="Returns a submatrix of the current matrix." alt="" coords="233,112,409,141"/>
+<area shape="rect" id="node11" href="$class_code_word.html#a66f5770ffe69886cfc0d7999f1af42a1" title="Adds 32 bits at the end of the code word." alt="" coords="255,165,388,195"/>
+<area shape="rect" id="node15" href="$class_code_word.html#a00a1d17b2474ad2dfea1225e25274b68" title="Adds 64 bits at the end of the code word." alt="" coords="255,219,388,248"/>
+<area shape="rect" id="node18" href="$class_code_matrix.html#a5610e3cf2d54e856ef43570e5ae071b3" title="Creates matrix from the given data." alt="" coords="233,272,409,301"/>
+<area shape="rect" id="node9" href="$class_low_weight_search.html#acaaef1508ddc2e7e7f7e348ddc92ac3b" title="An algorithm to find code words with low Hamming weight." alt="" coords="492,112,729,141"/>
+<area shape="rect" id="node13" href="$class_code_word.html#a5f70399b58e13bdaea4c32bce66d72b5" title="Deletes the 32&#45;bit word at the given position." alt="" coords="541,192,680,221"/>
+</map>

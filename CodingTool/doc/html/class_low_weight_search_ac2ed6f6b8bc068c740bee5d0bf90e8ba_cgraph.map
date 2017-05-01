@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_code_matrix.html#a9720e76f4d28cffb4fb403a59c71b04e" title="Returns the bit at the given position." alt="" coords="276,5,409,35"/>
+<area shape="rect" id="node5" href="$class_code_matrix.html#aa85ea1204aa95a1eebe5d13408fbc01b" title="Returns the number of columns." alt="" coords="259,59,427,88"/>
+<area shape="rect" id="node7" href="$class_code_matrix.html#afb7e211ee85715ce2c020ad3a2d509cc" title="Returns the number of rows." alt="" coords="268,112,417,141"/>
+<area shape="rect" id="node9" href="$class_code_matrix.html#a68940dad17351f3dabb5d94c27ada8f4" title="Changes the bit at the given position." alt="" coords="272,165,413,195"/>
+</map>

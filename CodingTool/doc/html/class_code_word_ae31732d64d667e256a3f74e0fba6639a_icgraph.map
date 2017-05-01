@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_code_matrix.html#ac8cdeeea7c71b55657e9963ac9dd9377" title="Adds a row to the matrix." alt="" coords="236,85,380,115"/>
+<area shape="rect" id="node9" href="$class_low_weight_search.html#acaaef1508ddc2e7e7f7e348ddc92ac3b" title="An algorithm to find code words with low Hamming weight." alt="" coords="684,164,921,193"/>
+<area shape="rect" id="node14" href="$class_code_word.html#a4c6e1704f996c5784c28fc54b6fbeecc" title="Overloads the == operator." alt="" coords="231,216,385,245"/>
+<area shape="rect" id="node16" href="$class_code_word_file.html#aa489c11b38cd2f8201ed215bff8a6278" title="Writes the code word to the file." alt="" coords="207,269,409,299"/>
+<area shape="rect" id="node5" href="$class_code_matrix.html#aa4f385ad92e535cecc7bfbc464ae093c" title="Creates a code matrix." alt="" coords="484,5,609,35"/>
+<area shape="rect" id="node7" href="$class_code_matrix.html#ae9be4cabd8028bc99fd7eaeb06c380a1" title="Returns a submatrix of the current matrix." alt="" coords="459,59,635,88"/>
+<area shape="rect" id="node11" href="$class_code_matrix.html#afeded7d0b810a252532903bdb95e3b31" title="Returns the transposed matrix." alt="" coords="469,112,624,141"/>
+</map>

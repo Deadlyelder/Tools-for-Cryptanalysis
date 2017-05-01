@@ -55,3 +55,14 @@ This library, written in C++ that is efficient at finding low weight codewords o
 * [Paper](http://dx.doi.org/10.1007/978-3-642-10433-6_5)
 
 This tool computes linear hulls for the original PRESENT cipher. It confirms and even improves on the predicted bias (and the corresponding attack complexities) of conventional linear relations based on a single linear trail.
+
+## CodingTool Library
+
+*Tool for cryptanalysis based on coding theory*
+
+* Developer: Tomislav Nad
+* [Direct download](https://www.iaik.tugraz.at/content/research/krypto/codingtool/downloads/CodingTool-0.9.zip)
+* [Official websit](http://www.iaik.tugraz.at/content/research/krypto/codingtool/)
+
+The CodingTool library is a collection of tools to use techniques from coding theory in cryptanalysis. The core part is an implementation of a probabilistic algorithm to search for code words with low Hamming weight. Additional functionalities like shortening and puncturing of a linear code or adding a weight to each bit of a code word are implemented. Furthermore, the library provides data structures to assist the user in creating a linear code for a specific problem. An easy to use interface to the provided algorithms, powerful data structures and a command line parser reduces the implementation work of a cryptanalyst to a minimum.
+

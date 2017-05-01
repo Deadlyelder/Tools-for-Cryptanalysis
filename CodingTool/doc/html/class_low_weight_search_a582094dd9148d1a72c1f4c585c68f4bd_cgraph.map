@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_code_matrix.html#aa85ea1204aa95a1eebe5d13408fbc01b" title="Returns the number of columns." alt="" coords="405,5,573,35"/>
+<area shape="rect" id="node5" href="$class_random_number_generator.html#a233a3c1542aff5148195518c7d0fb4d2" title="Returns a vector of positive integers." alt="" coords="336,59,643,88"/>
+<area shape="rect" id="node9" href="$class_code_matrix.html#afb7e211ee85715ce2c020ad3a2d509cc" title="Returns the number of rows." alt="" coords="415,112,564,141"/>
+<area shape="rect" id="node11" href="$class_code_matrix.html#a68940dad17351f3dabb5d94c27ada8f4" title="Changes the bit at the given position." alt="" coords="419,165,560,195"/>
+<area shape="rect" id="node7" href="$class_random_number_generator.html#ab3cd8b5a1b09ed278f20e42eb5bb793a" title="Returns a positive integer." alt="" coords="692,59,999,88"/>
+</map>

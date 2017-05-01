@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_input_handler.html#a928597d43d3cdb9833633f36d609883b" title="Prints the usage of a program." alt="" coords="231,5,396,35"/>
+<area shape="rect" id="node5" href="$class_input_handler.html#aab9cec88d1ef5f57e3124911ef1a32b2" title="Parses command line arguments and stores them in a Parameters object." alt="" coords="445,5,629,35"/>
+</map>

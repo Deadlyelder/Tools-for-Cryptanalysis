@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_code_word.html#ab10ccfc8e0b0e112cdecdcafe025c8b4" title="Returns the bit from the given position." alt="" coords="297,5,428,35"/>
+<area shape="rect" id="node5" href="$class_code_word.html#ac9a2ae29d2936b35e7f6da6243facbcd" title="Returns the Hamming weight of the code word." alt="" coords="259,59,467,88"/>
+<area shape="rect" id="node7" href="$class_code_word.html#ae31732d64d667e256a3f74e0fba6639a" title="Returns the length of the code word." alt="" coords="288,112,437,141"/>
+</map>

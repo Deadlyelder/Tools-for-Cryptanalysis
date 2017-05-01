@@ -1,0 +1,25 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_code_matrix.html#adbc4f3a167927b6b85d971976e1e5eb7" title="Returns the 64&#45;bit value at the given position." alt="" coords="373,5,496,35"/>
+<area shape="rect" id="node5" href="$class_low_weight_search.html#ac2ed6f6b8bc068c740bee5d0bf90e8ba" title="Transforms the matrix to reduced row echelon form." alt="" coords="332,163,537,192"/>
+<area shape="rect" id="node9" href="$class_code_matrix.html#aa85ea1204aa95a1eebe5d13408fbc01b" title="Returns the number of columns." alt="" coords="693,157,861,187"/>
+<area shape="rect" id="node11" href="$class_code_matrix.html#afb7e211ee85715ce2c020ad3a2d509cc" title="Returns the number of rows." alt="" coords="703,211,852,240"/>
+<area shape="rect" id="node16" href="$class_code_word.html#ac9a2ae29d2936b35e7f6da6243facbcd" title="Returns the Hamming weight of the code word." alt="" coords="673,421,881,451"/>
+<area shape="rect" id="node18" href="$class_parameters.html#aed52535905bc429909096f2717e0d44c" title="Returns the value of an integer parameter." alt="" coords="327,579,543,608"/>
+<area shape="rect" id="node20" href="$class_code_word.html#ae31732d64d667e256a3f74e0fba6639a" title="Returns the length of the code word." alt="" coords="1059,473,1208,503"/>
+<area shape="rect" id="node22" href="$class_random_number_generator.html#a233a3c1542aff5148195518c7d0fb4d2" title="Returns a vector of positive integers." alt="" coords="624,317,931,347"/>
+<area shape="rect" id="node27" href="$class_parameters.html#a0fd9301bfbc1688aac1f6041f6fdb394" title="Returns the value of a string parameter." alt="" coords="329,632,540,661"/>
+<area shape="rect" id="node29" href="$class_code_matrix.html#ae9be4cabd8028bc99fd7eaeb06c380a1" title="Returns a submatrix of the current matrix." alt="" coords="347,525,523,555"/>
+<area shape="rect" id="node38" href="$class_code_matrix.html#a8bedafbb5c302ffa92ce00044df2ea4c" title="Returns true if the matrix is a systematic generator matrix." alt="" coords="349,109,520,139"/>
+<area shape="rect" id="node43" href="$class_parameters.html#a9cf794b6fc3ce1aa72d69f8163e7f062" title="Outputs parameters to the console." alt="" coords="373,685,496,715"/>
+<area shape="rect" id="node45" href="$class_low_weight_search.html#a582094dd9148d1a72c1f4c585c68f4bd" title="Randomly permutes the columns of the given matrix." alt="" coords="293,267,576,296"/>
+<area shape="rect" id="node51" href="$class_code_word_file.html#a343a78c760b0399feb4c71f6a52d2495" title="Sets the parameter object." alt="" coords="336,739,533,768"/>
+<area shape="rect" id="node53" href="$class_code_word_file.html#af8b54b509b20ef6df7151a91687860d3" title="Writes the header to the file." alt="" coords="364,792,505,821"/>
+<area shape="rect" id="node55" href="$class_code_word_file.html#aa489c11b38cd2f8201ed215bff8a6278" title="Writes the code word to the file." alt="" coords="333,472,536,501"/>
+<area shape="rect" id="node7" href="$class_code_matrix.html#a9720e76f4d28cffb4fb403a59c71b04e" title="Returns the bit at the given position." alt="" coords="711,104,844,133"/>
+<area shape="rect" id="node13" href="$class_code_matrix.html#a68940dad17351f3dabb5d94c27ada8f4" title="Changes the bit at the given position." alt="" coords="707,264,848,293"/>
+<area shape="rect" id="node24" href="$class_random_number_generator.html#ab3cd8b5a1b09ed278f20e42eb5bb793a" title="Returns a positive integer." alt="" coords="980,317,1287,347"/>
+<area shape="rect" id="node31" href="$class_code_matrix.html#ac8cdeeea7c71b55657e9963ac9dd9377" title="Adds a row to the matrix." alt="" coords="705,579,849,608"/>
+<area shape="rect" id="node34" href="$class_code_word.html#abd4be5b5ebe578e41b631464b0b339e9" title="CodeWord::Clear" alt="" coords="717,632,837,661"/>
+<area shape="rect" id="node36" href="$class_code_word.html#a34b5c6484c203984a6066bd19b0535ca" title="Adds a bit at the end of the code word." alt="" coords="704,685,851,715"/>
+<area shape="rect" id="node57" href="$class_code_word.html#ab10ccfc8e0b0e112cdecdcafe025c8b4" title="Returns the bit from the given position." alt="" coords="712,525,843,555"/>
+</map>

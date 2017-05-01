@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_code_matrix.html#ad39336f36301e3dd810ff6a02b28403c" title="Deletes a column of the matrix." alt="" coords="281,5,457,35"/>
+<area shape="rect" id="node5" href="$class_code_matrix.html#aa9745094a53951f73f60f95a48db3389" title="Deletes a row of the matrix." alt="" coords="291,59,448,88"/>
+<area shape="rect" id="node7" href="$class_code_matrix.html#aa85ea1204aa95a1eebe5d13408fbc01b" title="Returns the number of columns." alt="" coords="285,112,453,141"/>
+<area shape="rect" id="node9" href="$class_code_matrix.html#afb7e211ee85715ce2c020ad3a2d509cc" title="Returns the number of rows." alt="" coords="295,165,444,195"/>
+<area shape="rect" id="node11" href="$class_code_matrix.html#a68940dad17351f3dabb5d94c27ada8f4" title="Changes the bit at the given position." alt="" coords="299,219,440,248"/>
+</map>

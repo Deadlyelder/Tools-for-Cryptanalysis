@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_random_number_generator.html#a233a3c1542aff5148195518c7d0fb4d2" title="Returns a vector of positive integers." alt="" coords="363,5,669,35"/>
+<area shape="rect" id="node5" href="$class_low_weight_search.html#acaaef1508ddc2e7e7f7e348ddc92ac3b" title="An algorithm to find code words with low Hamming weight." alt="" coords="1049,5,1287,35"/>
+<area shape="rect" id="node7" href="$class_low_weight_search.html#a582094dd9148d1a72c1f4c585c68f4bd" title="Randomly permutes the columns of the given matrix." alt="" coords="717,31,1000,60"/>
+</map>

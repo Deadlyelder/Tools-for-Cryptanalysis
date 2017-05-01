@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$class_random_number_generator.html" title="This class provides access to a random number generator." alt="" coords="5,101,176,131"/>
+<area shape="rect" id="node4" href="$class_code_word_file.html" title="This class reads and writes files containing code words." alt="" coords="200,101,304,131"/>
+<area shape="rect" id="node6" href="$class_parameters.html" title="This is a handler for parameters used in the CodingTool." alt="" coords="208,5,296,35"/>
+<area shape="rect" id="node8" href="$class_code_matrix.html" title="This class represents a binary code matrix." alt="" coords="328,101,416,131"/>
+</map>

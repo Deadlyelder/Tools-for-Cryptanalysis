@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_code_matrix.html#ac8cdeeea7c71b55657e9963ac9dd9377" title="Adds a row to the matrix." alt="" coords="231,5,375,35"/>
+<area shape="rect" id="node7" href="$class_code_word.html#abd4be5b5ebe578e41b631464b0b339e9" title="CodeWord::Clear" alt="" coords="243,59,363,88"/>
+<area shape="rect" id="node9" href="$class_code_word.html#a34b5c6484c203984a6066bd19b0535ca" title="Adds a bit at the end of the code word." alt="" coords="229,112,376,141"/>
+<area shape="rect" id="node5" href="$class_code_word.html#ae31732d64d667e256a3f74e0fba6639a" title="Returns the length of the code word." alt="" coords="425,5,575,35"/>
+</map>
