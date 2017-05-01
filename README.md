@@ -93,3 +93,13 @@ Grain of Salt is a tool developed to automatically test stream ciphers against s
 
 SYMAES is a software tool that generates a system of polynomials in GF(2), corresponding to the round transformation and key schedule of the block cipher AES-128.
 
+## Automated Algebraic Cryptanalysis
+
+*A simple tool for the automatic algebraic cryptanalysis of a large array of stream- and block ciphers*
+
+* Developer: Paul Stankovski
+* [Official website](http://www.eit.lth.se/index.php?id=260&uhpuid=dhs.pas&hpuid=584&L=1)
+* Direct download: [Windows Executeable](http://www.eit.lth.se/fileadmin/eit/home/dhs.pas/win_exec.zip), [Linux Executable](http://www.eit.lth.se/fileadmin/eit/home/dhs.pas/linux_exec.zip), [C code](http://www.eit.lth.se/fileadmin/eit/home/dhs.pas/source.zip)
+ 
+A simple tool for the automatic algebraic cryptanalysis of a large array of stream and block ciphers. Three tests have been implemented and the best results have led to continued work on a computational cluster. 
+
