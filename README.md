@@ -145,3 +145,10 @@ PARI/GP is a widely used computer algebra system designed for fast computations 
 * [Official repository](https://gforge.inria.fr/scm/?group_id=2065)
 
 CADO-NFS (Crible Algebrique: Distribution, Optimisation - Number Field Sieve) is a complete implementation in C/C++ of the Number Field Sieve (NFS) algorithm for factoring integers. It consists in various programs corresponding to all the phases of the algorithm, and a general script that runs them, possibly in parallel over a network of computers.
+
+## sha1collisiondetection
+
+* Developer: Marc Stevens
+* [Official repository](https://github.com/cr-marcstevens/sha1collisiondetection)
+
+sha1collisiondetection library and command line tool is designed as near drop-in replacements for common SHA-1 libraries and sha1sum. It will compute the SHA-1 hash of any given file and additionally will detect cryptanalytic collision attacks against SHA-1 present in each file. It is very fast and takes less than twice the amount of time as regular SHA-1.

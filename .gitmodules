@@ -13,3 +13,6 @@
 [submodule "cado-nfs"]
 	path = cado-nfs
 	url = https://scm.gforge.inria.fr/anonscm/git/cado-nfs/cado-nfs.git
+[submodule "sha1collisiondetection"]
+	path = sha1collisiondetection
+	url = git@github.com:cr-marcstevens/sha1collisiondetection.git
