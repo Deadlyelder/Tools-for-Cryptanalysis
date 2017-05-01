@@ -4,7 +4,7 @@ A curated list of cryptography and cryptoanalysis related tools and libraries.
 
 ## Motivation
 
-The motivation of curating a list of cryptography and crytoanalysis related tools was born from desire to have a centralized point where all such tools can be found. Attempts will be made to keep it updated as frequently as possible. If you find any tools/library that is missing feel free to contribute.
+The motivation of curating a list of cryptography and crytoanalysis related tools was born from desire to have a centralized point where all such tools can be found. Attempts will be made to keep it updated as frequently as possible. If you find any tools/library that are missing feel free to contribute.
 
 ## Contents
 1. [KeccakTools](#KeccakTools)
