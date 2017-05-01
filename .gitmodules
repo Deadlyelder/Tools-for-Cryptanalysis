@@ -7,3 +7,6 @@
 [submodule "symaes"]
 	path = symaes
 	url = https://github.com/vesselinux/symaes
+[submodule "lextool"]
+	path = lextool
+	url = https://github.com/vesselinux/lextool

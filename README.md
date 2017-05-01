@@ -112,3 +112,10 @@ A simple tool for the automatic algebraic cryptanalysis of a large array of stre
 
 AlPAtH is a software framework to run algebraic attacks on hash functions. This framework is intended to run algebraic attacks on hash functions, but could be extended to any kind of ciphers (block, stream). It provides a framework to generate equations, solve these equations and interpret the results.
 
+## Lex Toolkit
+
+*A Tool for Algebraic Analysis of Stream Cipher LEX*
+
+* Developer: V. Velichkov, V. Rijmen, and B. Preneel
+
+The Lex Toolkit is a collection of Python programs for the computer algebra system Sage. The programs generate Boolean algebraic equations for a small-scale version of stream cipher LEX.
