@@ -119,3 +119,13 @@ AlPAtH is a software framework to run algebraic attacks on hash functions. This 
 * Developer: V. Velichkov, V. Rijmen, and B. Preneel
 
 The Lex Toolkit is a collection of Python programs for the computer algebra system Sage. The programs generate Boolean algebraic equations for a small-scale version of stream cipher LEX.
+
+## Yafu (Yet Another Factorization Utility)
+
+* Developer: 
+* [Official website](https://sites.google.com/site/bbuhrow/)
+* [Official repository](https://sourceforge.net/projects/yafu/)
+
+YAFU (with assistance from other free software) uses the most powerful modern algorithms (and implementations of them) to factor input integers in a completely automated way.
+
+
