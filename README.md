@@ -128,4 +128,12 @@ The Lex Toolkit is a collection of Python programs for the computer algebra syst
 
 YAFU (with assistance from other free software) uses the most powerful modern algorithms (and implementations of them) to factor input integers in a completely automated way.
 
+## Msieve
+
+* Developer: 
+* [Official repositoy](https://sourceforge.net/projects/msieve/)
+
+Msieve is a C library implementing a suite of algorithms to factor large integers. It contains an implementation of the SIQS and GNFS algorithms.
+
+## 
 
