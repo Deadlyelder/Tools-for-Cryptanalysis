@@ -62,7 +62,34 @@ This tool computes linear hulls for the original PRESENT cipher. It confirms and
 
 * Developer: Tomislav Nad
 * [Direct download](https://www.iaik.tugraz.at/content/research/krypto/codingtool/downloads/CodingTool-0.9.zip)
-* [Official websit](http://www.iaik.tugraz.at/content/research/krypto/codingtool/)
+* [Official website](http://www.iaik.tugraz.at/content/research/krypto/codingtool/)
 
 The CodingTool library is a collection of tools to use techniques from coding theory in cryptanalysis. The core part is an implementation of a probabilistic algorithm to search for code words with low Hamming weight. Additional functionalities like shortening and puncturing of a linear code or adding a weight to each bit of a code word are implemented. Furthermore, the library provides data structures to assist the user in creating a linear code for a specific problem. An easy to use interface to the provided algorithms, powerful data structures and a command line parser reduces the implementation work of a cryptanalyst to a minimum.
+
+## Sage
+
+*Free open-source mathematics especially number-theory software system, also contains many modules for cryptography*
+
+* [Download](http://www.sagemath.org/)
+* [Documentation](http://www.sagemath.org/doc/reference/cryptography.html)
+
+Sage is a free open-source mathematics software system licensed under the GPL. It combines many existing open-source packages into a common Python-based interface. It also contains modules to perform both basic and more advanced computations in cryptography and cryptanalysis.
+
+## Grain of Salt
+
+*An automated way to test stream ciphers through SAT solvers*
+
+* Developer: Mate Soos
+* [Official website](http://planete.inrialpes.fr/~soos/GrainOfSalt/)
+
+Grain of Salt is a tool developed to automatically test stream ciphers against standard SAT solver-based attacks. The tool takes as input a set of configuration options and the definition of each filter and feedback function of the stream cipher. It outputs a problem in the language of SAT solvers describing the cipher. The tool can automatically generate SAT problem instances for Crypto-1, HiTag2, Grain, Bivium-B and Trivium. 
+
+## SYMAES
+
+*A Fully Symbolic Polynomial System Generator for AES-128*
+
+* Developers: Vesselin Velichkov, Vincent Rijmen, Bart Preneel
+* [Paper](http://www.cosic.esat.kuleuven.be/publications/article-1476.pdf)
+
+SYMAES is a software tool that generates a system of polynomials in GF(2), corresponding to the round transformation and key schedule of the block cipher AES-128.
 

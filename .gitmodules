@@ -1,3 +1,9 @@
 [submodule "isd"]
 	path = isd
 	url = https://github.com/isd-dev/isd
+[submodule "grainofsalt"]
+	path = grainofsalt
+	url = https://github.com/msoos/grainofsalt
+[submodule "symaes"]
+	path = symaes
+	url = https://github.com/vesselinux/symaes
