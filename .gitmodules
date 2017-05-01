@@ -1,0 +1,3 @@
+[submodule "isd"]
+	path = isd
+	url = https://github.com/isd-dev/isd

@@ -19,7 +19,7 @@ KeccakTools is a set of C++ classes aimed as an assitant in analyzing the sponge
 
 This toolkit can be used to prove the security of cryptographic ciphers against linear and differential cryptanalysis. This toolkit generates Mixed-Integer Linear Progreamming problem which counts the minimum number of (linearly or differentially) active S-boxes for a given cipher. The toolkit currently supports AES and xAES (both in the single-key and related-key setting), as well as Enocoro-128v2 (in the related-key setting). The paper that introduced this tookkit is [available online](https://www.esat.kuleuven.be/cosic/publications/article-2080.pdf).
 
-## Hashclash
+## HashClash
 
 *Framework for MD5 & SHA-1 Differential Path Construction and Chosen-Prefix Collisions for MD5*
 
@@ -37,3 +37,21 @@ This framework contains tools for the constructions of differential paths for MD
 
 The ARX toolkit is a set of tools to study ARX ciphers and hash functions. This tookkit was presented at the SHA-3 conference in March 2012.
 
+## Information Set Decoding
+
+*A tool for information set decoding*
+
+* Developers: Unknown?
+* [Official source](https://github.com/isd-dev/isd/downloads)
+
+This library, written in C++ that is efficient at finding low weight codewords of a linear code using information set decoding.
+
+## Linear Hull Cryptanalysis of PRESENT
+
+*A tool to compute linear hulls for PRESENT cipher*
+
+* Developer: Bingsheng Zhang
+* [Direct download](http://www.ecrypt.eu.org/tools/uploads/present-linear-hull.zip)
+* [Paper](http://dx.doi.org/10.1007/978-3-642-10433-6_5)
+
+This tool computes linear hulls for the original PRESENT cipher. It confirms and even improves on the predicted bias (and the corresponding attack complexities) of conventional linear relations based on a single linear trail.
