@@ -8,7 +8,7 @@
 * [Direct download](http://keccak.noekeon.org/KeccakTools-3.3.zip)
 * [Official website](http://keccak.noekeon.org/KeccakTools-doc/)
 
-KeccakTools is a set of C++ classes aimed as an assitant in analyzing the sponge function family `Keccak`. These classes and methods were used to obtain the results reported in the paper `Differential propagation anaylsis of Keccak` presented at FSE 2012 (available here [IACR ePrint 2012/163](http://eprint.iacr.org/2012/163)).
+KeccakTools is a set of C++ classes aimed as an assitant in analyzing the sponge function family `Keccak`. These classes and methods were used to obtain the results reported in the paper `Differential propagation analysis of Keccak` presented at FSE 2012 (available here [IACR ePrint 2012/163](http://eprint.iacr.org/2012/163)).
 
 ## S-Box Mixed-Integer Linear Programming tool
 
@@ -129,7 +129,7 @@ YAFU (with assistance from other free software) uses the most powerful modern al
 
 ## Msieve
 
-* [Official repositoy](https://sourceforge.net/projects/msieve/)
+* [Official repository](https://sourceforge.net/projects/msieve/)
 
 Msieve is a C library implementing a suite of algorithms to factor large integers. It contains an implementation of the SIQS and GNFS algorithms. Usefull for RSA attacks.
 
@@ -142,5 +142,6 @@ PARI/GP is a widely used computer algebra system designed for fast computations 
 ## CADO-NFS
 
 * [Official website](http://cado-nfs.gforge.inria.fr)
+* [Official repository](https://gforge.inria.fr/scm/?group_id=2065)
 
 CADO-NFS (Crible Algebrique: Distribution, Optimisation - Number Field Sieve) is a complete implementation in C/C++ of the Number Field Sieve (NFS) algorithm for factoring integers. It consists in various programs corresponding to all the phases of the algorithm, and a general script that runs them, possibly in parallel over a network of computers.
