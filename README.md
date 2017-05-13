@@ -1,10 +1,10 @@
 # Crypto-Tools
 
-A curated list of cryptography and cryptoanalysis related tools and libraries.
+A curated list of cryptography and cryptanalysis related tools and libraries.
 
 ## Motivation
 
-The motivation of curating a list of cryptography and crytoanalysis related tools was born from desire to have a centralized point where all such tools can be found. Attempts will be made to keep it updated as frequently as possible. If you find any tools/library that are missing feel free to contribute.
+The motivation of curating a list of cryptography and cryptanalysis related tools was born from desire to have a centralized point where all such tools can be found. Attempts will be made to keep it updated as frequently as possible. If you find any tools/library that are missing feel free to contribute.
 
 ## Contents
 1. [KeccakTools](#KeccakTools)
@@ -24,6 +24,7 @@ The motivation of curating a list of cryptography and crytoanalysis related tool
 15. [CADO-NFS](#cado)
 16. [sha1collisiondetection](#sha1coll)
 17. [S-function Toolkit](#sfun)
+18. [SIMON/SPECK Cryptanalysis](#simon-speck)
 1. [License](#license)
 
 <a name="KeccakTools"></a>
@@ -35,7 +36,7 @@ The motivation of curating a list of cryptography and crytoanalysis related tool
 * [Direct download](http://keccak.noekeon.org/KeccakTools-3.3.zip)
 * [Official website](http://keccak.noekeon.org/KeccakTools-doc/)
 
-KeccakTools is a set of C++ classes aimed as an assitant in analyzing the sponge function family `Keccak`. These classes and methods were used to obtain the results reported in the paper `Differential propagation analysis of Keccak` presented at FSE 2012 (available here [IACR ePrint 2012/163](http://eprint.iacr.org/2012/163)).
+KeccakTools is a set of C++ classes aimed as an assistant in analyzing the sponge function family `Keccak`. These classes and methods were used to obtain the results reported in the paper `Differential propagation analysis of Keccak` presented at FSE 2012 (available here [IACR ePrint 2012/163](http://eprint.iacr.org/2012/163)).
 
 <a name="milp"></a>
 ## S-Box Mixed-Integer Linear Programming tool
@@ -44,11 +45,12 @@ KeccakTools is a set of C++ classes aimed as an assitant in analyzing the sponge
 
 * Developer: Nicky Mouha
 * [Direct download](http://www.ecrypt.eu.org/tools/uploads/sbox-milp.zip)
+* [Location within this repository](https://github.com/Deadlyelder/Tools-for-Cryptanalysis/tree/master/S-Box%20MILP%20tool)
 
-This toolkit can be used to prove the security of cryptographic ciphers against linear and differential cryptanalysis. This toolkit generates Mixed-Integer Linear Progreamming problem which counts the minimum number of (linearly or differentially) active S-boxes for a given cipher. The toolkit currently supports AES and xAES (both in the single-key and related-key setting), as well as Enocoro-128v2 (in the related-key setting). The paper that introduced this toolkit is [available online](https://www.esat.kuleuven.be/cosic/publications/article-2080.pdf).
+This toolkit can be used to prove the security of cryptographic ciphers against linear and differential cryptanalysis. This toolkit generates Mixed-Integer Linear Programming problem which counts the minimum number of (linearly or differentially) active S-boxes for a given cipher. The toolkit currently supports AES and xAES (both in the single-key and related-key setting), as well as Enocoro-128v2 (in the related-key setting). The paper that introduced this toolkit is [available online](https://www.esat.kuleuven.be/cosic/publications/article-2080.pdf).
 
 <a name="HashClash"></a>
-## HashClash 
+## HashClash
 
 *Framework for MD5 & SHA-1 Differential Path Construction and Chosen-Prefix Collisions for MD5*
 
@@ -65,7 +67,7 @@ This framework contains tools for the constructions of differential paths for MD
 * Developer: Gaetan Leurent
 * [Official website](http://www.di.ens.fr/~leurent/arxtools.html)
 
-The ARX toolkit is a set of tools to study ARX ciphers and hash functions. This tookkit was presented at the SHA-3 conference in March 2012.
+The ARX toolkit is a set of tools to study ARX ciphers and hash functions. This toolkit was presented at the SHA-3 conference in March 2012.
 
 <a name="isd"></a>
 ## Information Set Decoding
@@ -107,7 +109,7 @@ The CodingTool library is a collection of tools to use techniques from coding th
 * Developer: Mate Soos
 * [Official website](http://planete.inrialpes.fr/~soos/GrainOfSalt/)
 
-Grain of Salt is a tool developed to automatically test stream ciphers against standard SAT solver-based attacks. The tool takes as input a set of configuration options and the definition of each filter and feedback function of the stream cipher. It outputs a problem in the language of SAT solvers describing the cipher. The tool can automatically generate SAT problem instances for Crypto-1, HiTag2, Grain, Bivium-B and Trivium. 
+Grain of Salt is a tool developed to automatically test stream ciphers against standard SAT solver-based attacks. The tool takes as input a set of configuration options and the definition of each filter and feedback function of the stream cipher. It outputs a problem in the language of SAT solvers describing the cipher. The tool can automatically generate SAT problem instances for Crypto-1, HiTag2, Grain, Bivium-B and Trivium.
 
 <a name="symaes"></a>
 ## SYMAES
@@ -127,7 +129,7 @@ SYMAES is a software tool that generates a system of polynomials in GF(2), corre
 * Developer: Paul Stankovski
 * [Official website](http://www.eit.lth.se/index.php?id=260&uhpuid=dhs.pas&hpuid=584&L=1)
 * Direct download: [Windows Executeable](http://www.eit.lth.se/fileadmin/eit/home/dhs.pas/win_exec.zip), [Linux Executable](http://www.eit.lth.se/fileadmin/eit/home/dhs.pas/linux_exec.zip), [C code](http://www.eit.lth.se/fileadmin/eit/home/dhs.pas/source.zip)
- 
+
 A simple tool for the automatic algebraic cryptanalysis of a large array of stream and block ciphers. Three tests have been implemented and the best results have led to continued work on a computational cluster.
 
 <a name="alpath"></a>
@@ -137,6 +139,7 @@ A simple tool for the automatic algebraic cryptanalysis of a large array of stre
 
 * Developer: Luk Bettale
 * [Official website](https://www.lukbettale.ze.cx/alpath/)
+* [Location within this repo](https://github.com/Deadlyelder/Tools-for-Cryptanalysis/tree/master/AIPAtH)
 
 AlPAtH is a software framework to run algebraic attacks on hash functions. This framework is intended to run algebraic attacks on hash functions, but could be extended to any kind of ciphers (block, stream). It provides a framework to generate equations, solve these equations and interpret the results.
 
@@ -146,6 +149,7 @@ AlPAtH is a software framework to run algebraic attacks on hash functions. This 
 *A Tool for Algebraic Analysis of Stream Cipher LEX*
 
 * Developer: V. Velichkov, V. Rijmen, and B. Preneel
+* [Official Repository](https://github.com/vesselinux/lextool.git)
 
 The Lex Toolkit is a collection of Python programs for the computer algebra system Sage. The programs generate Boolean algebraic equations for a small-scale version of stream cipher LEX.
 
@@ -155,7 +159,7 @@ The Lex Toolkit is a collection of Python programs for the computer algebra syst
 * [Official website](https://sites.google.com/site/bbuhrow/)
 * [Official repository](https://sourceforge.net/projects/yafu/)
 
-YAFU (with assistance from other free software) uses the most powerful modern algorithms (and implementations of them) to factor input integers in a completely automated way. Usefull for RSA attacks.
+YAFU (with assistance from other free software) uses the most powerful modern algorithms (and implementations of them) to factor input integers in a completely automated way. Useful for RSA attacks.
 
 <a name="msieve"></a>
 ## Msieve
@@ -183,16 +187,25 @@ sha1collisiondetection library and command line tool is designed as near drop-in
 <a name="sfun"></a>
 ## S-function Toolkit
 
-Toolkit for differential cryptanalysis of S-functions
+*Toolkit for differential cryptanalysis of S-functions*
 
 * Developers: Nicky Mouha, Vesselin Velichkov, Christophe De Cannière, Bart Preneel
 * [Direct download](http://www.ecrypt.eu.org/tools/uploads/s-function_toolkit_v2.zip)
 * [Paper](http://www.cosic.esat.kuleuven.be/publications/article-1473.pdf)
 
-An increasing number of cryptographic primitives use operations such as addition modulo 2n, multiplication by a constant and bitwise Boolean functions as a source of non-linearity. In NIST’s SHA-3 competition, this applies to 6 out of the 14 second-round candidates. An S-function is a function that calculates the i-th output bit using only the inputs of the i-th bit position and a finite state S[i]. Although S-functions have been analyzed before, this toolkit is the first to present a fully general and efficient framework to determine their differential properties. A precursor of this framework was used in the cryptanalysis of SHA-1. 
+An increasing number of cryptographic primitives use operations such as addition modulo 2n, multiplication by a constant and bitwise Boolean functions as a source of non-linearity. In NIST’s SHA-3 competition, this applies to 6 out of the 14 second-round candidates. An S-function is a function that calculates the i-th output bit using only the inputs of the i^th bit position and a finite state S[i]. Although S-functions have been analyzed before, this toolkit is the first to present a fully general and efficient framework to determine their differential properties. A precursor of this framework was used in the cryptanalysis of SHA-1.
+
+<a name="simon-speck"></a>
+## SIMON/SPECK cryptanalysis
+
+Cryptanalysis tool for the SIMON and SPECK families of block ciphers
+
+* Developers: Martin M. Lauridsen, Hoda A. Alkhzaimi
+* [Paper](http://link.springer.com/chapter/10.1007/978-3-319-13066-8_6)
+* [Official Repository](https://github.com/mmeh/simon-speck-cryptanalysis)
 
 <a name="license"></a>
-### License
+# License
 
 [![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
