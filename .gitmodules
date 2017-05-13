@@ -16,3 +16,6 @@
 [submodule "sha1collisiondetection"]
 	path = sha1collisiondetection
 	url = git@github.com:cr-marcstevens/sha1collisiondetection.git
+[submodule "simon-speck-cryptanalysis"]
+	path = simon-speck-cryptanalysis
+	url = git@github.com:mmeh/simon-speck-cryptanalysis.git
