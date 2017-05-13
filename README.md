@@ -45,7 +45,7 @@ KeccakTools is a set of C++ classes aimed as an assitant in analyzing the sponge
 * Developer: Nicky Mouha
 * [Direct download](http://www.ecrypt.eu.org/tools/uploads/sbox-milp.zip)
 
-This toolkit can be used to prove the security of cryptographic ciphers against linear and differential cryptanalysis. This toolkit generates Mixed-Integer Linear Progreamming problem which counts the minimum number of (linearly or differentially) active S-boxes for a given cipher. The toolkit currently supports AES and xAES (both in the single-key and related-key setting), as well as Enocoro-128v2 (in the related-key setting). The paper that introduced this tookkit is [available online](https://www.esat.kuleuven.be/cosic/publications/article-2080.pdf).
+This toolkit can be used to prove the security of cryptographic ciphers against linear and differential cryptanalysis. This toolkit generates Mixed-Integer Linear Progreamming problem which counts the minimum number of (linearly or differentially) active S-boxes for a given cipher. The toolkit currently supports AES and xAES (both in the single-key and related-key setting), as well as Enocoro-128v2 (in the related-key setting). The paper that introduced this toolkit is [available online](https://www.esat.kuleuven.be/cosic/publications/article-2080.pdf).
 
 <a name="HashClash"></a>
 ## HashClash 
