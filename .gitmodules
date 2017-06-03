@@ -19,3 +19,6 @@
 [submodule "simon-speck-cryptanalysis"]
 	path = simon-speck-cryptanalysis
 	url = git@github.com:mmeh/simon-speck-cryptanalysis.git
+[submodule "cryptosmt"]
+	path = cryptosmt
+	url = git@github.com:kste/cryptosmt.git

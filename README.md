@@ -25,6 +25,7 @@ The motivation of curating a list of cryptography and cryptanalysis related tool
 16. [sha1collisiondetection](#sha1coll)
 17. [S-function Toolkit](#sfun)
 18. [SIMON/SPECK Cryptanalysis](#simon-speck)
+19. [CryptoSMT](#cryptosmt)
 1. [License](#license)
 
 <a name="KeccakTools"></a>
@@ -76,6 +77,7 @@ The ARX toolkit is a set of tools to study ARX ciphers and hash functions. This 
 
 * Developers: Unknown?
 * [Official source](https://github.com/isd-dev/isd/downloads)
+* [Location within this repo](http://github.com/Deadlyelder/Tools-for-Cryptanalysis/tree/master/isd)
 
 This library, written in C++ that is efficient at finding low weight codewords of a linear code using information set decoding.
 
@@ -87,6 +89,7 @@ This library, written in C++ that is efficient at finding low weight codewords o
 * Developer: Bingsheng Zhang
 * [Direct download](http://www.ecrypt.eu.org/tools/uploads/present-linear-hull.zip)
 * [Paper](http://dx.doi.org/10.1007/978-3-642-10433-6_5)
+* [Location within this repo](http://github.com/Deadlyelder/Tools-for-Cryptanalysis/tree/master/PRESENT%20Linear%20Hull)
 
 This tool computes linear hulls for the original PRESENT cipher. It confirms and even improves on the predicted bias (and the corresponding attack complexities) of conventional linear relations based on a single linear trail.
 
@@ -98,6 +101,7 @@ This tool computes linear hulls for the original PRESENT cipher. It confirms and
 * Developer: Tomislav Nad
 * [Direct download](https://www.iaik.tugraz.at/content/research/krypto/codingtool/downloads/CodingTool-0.9.zip)
 * [Official website](http://www.iaik.tugraz.at/content/research/krypto/codingtool/)
+* [Location within this repo](https://github.com/Deadlyelder/Tools-for-Cryptanalysis/tree/master/CodingTool)
 
 The CodingTool library is a collection of tools to use techniques from coding theory in cryptanalysis. The core part is an implementation of a probabilistic algorithm to search for code words with low Hamming weight. Additional functionalities like shortening and puncturing of a linear code or adding a weight to each bit of a code word are implemented. Furthermore, the library provides data structures to assist the user in creating a linear code for a specific problem. An easy to use interface to the provided algorithms, powerful data structures and a command line parser reduces the implementation work of a cryptanalyst to a minimum.
 
@@ -108,6 +112,7 @@ The CodingTool library is a collection of tools to use techniques from coding th
 
 * Developer: Mate Soos
 * [Official website](http://planete.inrialpes.fr/~soos/GrainOfSalt/)
+* [Location within this repo](https://github.com/Deadlyelder/Tools-for-Cryptanalysis/tree/master/grainofsalt)
 
 Grain of Salt is a tool developed to automatically test stream ciphers against standard SAT solver-based attacks. The tool takes as input a set of configuration options and the definition of each filter and feedback function of the stream cipher. It outputs a problem in the language of SAT solvers describing the cipher. The tool can automatically generate SAT problem instances for Crypto-1, HiTag2, Grain, Bivium-B and Trivium.
 
@@ -128,7 +133,7 @@ SYMAES is a software tool that generates a system of polynomials in GF(2), corre
 
 * Developer: Paul Stankovski
 * [Official website](http://www.eit.lth.se/index.php?id=260&uhpuid=dhs.pas&hpuid=584&L=1)
-* Direct download: [Windows Executeable](http://www.eit.lth.se/fileadmin/eit/home/dhs.pas/win_exec.zip), [Linux Executable](http://www.eit.lth.se/fileadmin/eit/home/dhs.pas/linux_exec.zip), [C code](http://www.eit.lth.se/fileadmin/eit/home/dhs.pas/source.zip)
+* Direct download: [Windows Executable](http://www.eit.lth.se/fileadmin/eit/home/dhs.pas/win_exec.zip), [Linux Executable](http://www.eit.lth.se/fileadmin/eit/home/dhs.pas/linux_exec.zip), [C code](http://www.eit.lth.se/fileadmin/eit/home/dhs.pas/source.zip)
 
 A simple tool for the automatic algebraic cryptanalysis of a large array of stream and block ciphers. Three tests have been implemented and the best results have led to continued work on a computational cluster.
 
@@ -150,11 +155,14 @@ AlPAtH is a software framework to run algebraic attacks on hash functions. This 
 
 * Developer: V. Velichkov, V. Rijmen, and B. Preneel
 * [Official Repository](https://github.com/vesselinux/lextool.git)
+* [Location within this repo](https://github.com/Deadlyelder/Tools-for-Cryptanalysis/tree/master/lextool)
 
 The Lex Toolkit is a collection of Python programs for the computer algebra system Sage. The programs generate Boolean algebraic equations for a small-scale version of stream cipher LEX.
 
 <a name="yafu"></a>
-## Yafu (Yet Another Factorization Utility)
+## Yafu (Yet Another Factorization Utility
+
+*YAFU software that has implemented integer factoring algorithms*
 
 * [Official website](https://sites.google.com/site/bbuhrow/)
 * [Official repository](https://sourceforge.net/projects/yafu/)
@@ -164,23 +172,31 @@ YAFU (with assistance from other free software) uses the most powerful modern al
 <a name="msieve"></a>
 ## Msieve
 
+*Useful library for RSA attacks*
+
 * [Official repository](https://sourceforge.net/projects/msieve/)
 
-Msieve is a C library implementing a suite of algorithms to factor large integers. It contains an implementation of the SIQS and GNFS algorithms. Usefull for RSA attacks.
+Msieve is a C library implementing a suite of algorithms to factor large integers. It contains an implementation of the SIQS and GNFS algorithms. Useful for RSA attacks.
 
 <a name="cado"></a>
 ## CADO-NFS
 
+*Toolkit for NFS verification*
+
 * [Official website](http://cado-nfs.gforge.inria.fr)
 * [Official repository](https://gforge.inria.fr/scm/?group_id=2065)
+* [Location within this repo](https://github.com/Deadlyelder/Tools-for-Cryptanalysis/tree/master/cado-nfs)
 
 CADO-NFS (Crible Algebrique: Distribution, Optimisation - Number Field Sieve) is a complete implementation in C/C++ of the Number Field Sieve (NFS) algorithm for factoring integers. It consists in various programs corresponding to all the phases of the algorithm, and a general script that runs them, possibly in parallel over a network of computers.
 
 <a name="sha1coll"></a>
 ## sha1collisiondetection
 
+*Tool that computes SHA-1 hash of given file along with detecting collision attacks against SHA-1 for the given file*
+
 * Developer: Marc Stevens
 * [Official repository](https://github.com/cr-marcstevens/sha1collisiondetection)
+* [Location within this repo](https://github.com/Deadlyelder/Tools-for-Cryptanalysis/tree/master/sha1collisiondetection)
 
 sha1collisiondetection library and command line tool is designed as near drop-in replacements for common SHA-1 libraries and sha1sum. It will compute the SHA-1 hash of any given file and additionally will detect cryptanalytic collision attacks against SHA-1 present in each file. It is very fast and takes less than twice the amount of time as regular SHA-1.
 
@@ -198,11 +214,24 @@ An increasing number of cryptographic primitives use operations such as addition
 <a name="simon-speck"></a>
 ## SIMON/SPECK cryptanalysis
 
-Cryptanalysis tool for the SIMON and SPECK families of block ciphers
+*Cryptanalysis tool for the SIMON and SPECK families of block ciphers*
 
 * Developers: Martin M. Lauridsen, Hoda A. Alkhzaimi
 * [Paper](http://link.springer.com/chapter/10.1007/978-3-319-13066-8_6)
 * [Official Repository](https://github.com/mmeh/simon-speck-cryptanalysis)
+
+
+<a name="cryptosmt"></a>
+## CryptoSMT
+
+*A tool for cryptanalysis of symmetric primitives like block ciphers and hash functions*
+
+* Developers: Stefan Kölbl
+* [Official Website](http://www2.compute.dtu.dk/%7Estek/cryptosmt.html)
+* [Official Repository](https://github.com/kste/cryptosmt)
+* [Location within this repo](https://github.com/Deadlyelder/Tools-for-Cryptanalysis/tree/master/cryptosmt)
+
+CryptoSMT is an easy to use tool for cryptanalysis of symmetric primitives likes block ciphers or hash functions. It is based on SMT/SAT solvers like STP, Boolector, CryptoMiniSat and provides a simple framework to use them for cryptanalytic techniques.
 
 <a name="license"></a>
 # License
