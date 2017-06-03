@@ -77,7 +77,7 @@ The ARX toolkit is a set of tools to study ARX ciphers and hash functions. This 
 
 * Developers: Unknown?
 * [Official source](https://github.com/isd-dev/isd/downloads)
-* [Location within this repo](http://github.com/Deadlyelder/Tools-for-Cryptanalysis/tree/master/isd)
+* [Location within this repo](https://github.com/isd-dev/isd/tree/db3bbe7e86b06a7e62b6cb9e7b8c1ac0c416b953)
 
 This library, written in C++ that is efficient at finding low weight codewords of a linear code using information set decoding.
 
@@ -112,7 +112,7 @@ The CodingTool library is a collection of tools to use techniques from coding th
 
 * Developer: Mate Soos
 * [Official website](http://planete.inrialpes.fr/~soos/GrainOfSalt/)
-* [Location within this repo](https://github.com/Deadlyelder/Tools-for-Cryptanalysis/tree/master/grainofsalt)
+* [Location within this repo](https://github.com/msoos/grainofsalt/tree/f82b2a24098976075fac9b2df3e23caf2c91ac41)
 
 Grain of Salt is a tool developed to automatically test stream ciphers against standard SAT solver-based attacks. The tool takes as input a set of configuration options and the definition of each filter and feedback function of the stream cipher. It outputs a problem in the language of SAT solvers describing the cipher. The tool can automatically generate SAT problem instances for Crypto-1, HiTag2, Grain, Bivium-B and Trivium.
 
@@ -155,7 +155,7 @@ AlPAtH is a software framework to run algebraic attacks on hash functions. This 
 
 * Developer: V. Velichkov, V. Rijmen, and B. Preneel
 * [Official Repository](https://github.com/vesselinux/lextool.git)
-* [Location within this repo](https://github.com/Deadlyelder/Tools-for-Cryptanalysis/tree/master/lextool)
+* [Location within this repo](https://github.com/vesselinux/lextool/tree/0dc488f1a83c79452e626854bcbb39737036adcb)
 
 The Lex Toolkit is a collection of Python programs for the computer algebra system Sage. The programs generate Boolean algebraic equations for a small-scale version of stream cipher LEX.
 
@@ -185,7 +185,6 @@ Msieve is a C library implementing a suite of algorithms to factor large integer
 
 * [Official website](http://cado-nfs.gforge.inria.fr)
 * [Official repository](https://gforge.inria.fr/scm/?group_id=2065)
-* [Location within this repo](https://github.com/Deadlyelder/Tools-for-Cryptanalysis/tree/master/cado-nfs)
 
 CADO-NFS (Crible Algebrique: Distribution, Optimisation - Number Field Sieve) is a complete implementation in C/C++ of the Number Field Sieve (NFS) algorithm for factoring integers. It consists in various programs corresponding to all the phases of the algorithm, and a general script that runs them, possibly in parallel over a network of computers.
 
@@ -196,7 +195,7 @@ CADO-NFS (Crible Algebrique: Distribution, Optimisation - Number Field Sieve) is
 
 * Developer: Marc Stevens
 * [Official repository](https://github.com/cr-marcstevens/sha1collisiondetection)
-* [Location within this repo](https://github.com/Deadlyelder/Tools-for-Cryptanalysis/tree/master/sha1collisiondetection)
+* [Location within this repo](https://github.com/cr-marcstevens/sha1collisiondetection/tree/0572d8a302b1f62f25c1559b0de74908550ab2c3)
 
 sha1collisiondetection library and command line tool is designed as near drop-in replacements for common SHA-1 libraries and sha1sum. It will compute the SHA-1 hash of any given file and additionally will detect cryptanalytic collision attacks against SHA-1 present in each file. It is very fast and takes less than twice the amount of time as regular SHA-1.
 
@@ -229,7 +228,7 @@ An increasing number of cryptographic primitives use operations such as addition
 * Developers: Stefan Kölbl
 * [Official Website](http://www2.compute.dtu.dk/%7Estek/cryptosmt.html)
 * [Official Repository](https://github.com/kste/cryptosmt)
-* [Location within this repo](https://github.com/Deadlyelder/Tools-for-Cryptanalysis/tree/master/cryptosmt)
+* [Location within this repo](https://github.com/kste/cryptosmt/tree/62ecf615eab0cb3e1b966c2d80a03b16687cf670)
 
 CryptoSMT is an easy to use tool for cryptanalysis of symmetric primitives likes block ciphers or hash functions. It is based on SMT/SAT solvers like STP, Boolector, CryptoMiniSat and provides a simple framework to use them for cryptanalytic techniques.
 
