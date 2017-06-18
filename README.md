@@ -7,6 +7,7 @@ A curated list of cryptography and cryptanalysis related tools and libraries.
 The motivation of curating a list of cryptography and cryptanalysis related tools was born from desire to have a centralized point where all such tools can be found. Attempts will be made to keep it updated as frequently as possible. If you find any tools/library that are missing feel free to contribute.
 
 ## Contents
+1. [Lineartrails](#lineartrails)
 1. [KeccakTools](#KeccakTools)
 2. [S-Box Mixed-Integer Linear Programming tool](#MILP)
 3. [HashClash](#HashClash)
@@ -27,6 +28,18 @@ The motivation of curating a list of cryptography and cryptanalysis related tool
 18. [SIMON/SPECK Cryptanalysis](#simon-speck)
 19. [CryptoSMT](#cryptosmt)
 1. [License](#license)
+
+<a name="lineartrails"></a>
+## lineartrails
+
+*Tool to automatically search for linear characteristics*
+
+* Developers: Christoph Dobraunig, Maria Eichlseder, Florian Mendel
+* [Official Repository](https://github.com/iaikkrypto/lineartrails)
+
+A tool that searches for linear characteristics for given S-Box. The tool was born
+from the paper [Heuristic Tool for Linear Cryptanalysis with Applications to CAESAR Candidates](https://eprint.iacr.org/2015/1200).
+
 
 <a name="KeccakTools"></a>
 ## KeccakTools
