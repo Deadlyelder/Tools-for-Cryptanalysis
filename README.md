@@ -27,6 +27,7 @@ The motivation of curating a list of cryptography and cryptanalysis related tool
 17. [S-function Toolkit](#sfun)
 18. [SIMON/SPECK Cryptanalysis](#simon-speck)
 19. [CryptoSMT](#cryptosmt)
+20. [YAARX](#yaarx)
 1. [License](#license)
 
 <a name="lineartrails"></a>
@@ -232,7 +233,6 @@ An increasing number of cryptographic primitives use operations such as addition
 * [Paper](http://link.springer.com/chapter/10.1007/978-3-319-13066-8_6)
 * [Official Repository](https://github.com/mmeh/simon-speck-cryptanalysis)
 
-
 <a name="cryptosmt"></a>
 ## CryptoSMT
 
@@ -244,6 +244,17 @@ An increasing number of cryptographic primitives use operations such as addition
 * [Location within this repo](https://github.com/kste/cryptosmt/tree/62ecf615eab0cb3e1b966c2d80a03b16687cf670)
 
 CryptoSMT is an easy to use tool for cryptanalysis of symmetric primitives likes block ciphers or hash functions. It is based on SMT/SAT solvers like STP, Boolector, CryptoMiniSat and provides a simple framework to use them for cryptanalytic techniques.
+
+<a name="yaarx"></a>
+## YAARX - YAARX: Yet Another ARX Toolkit
+
+*A set of programs for the differential analysis of ARX cryptographic algorithms*
+
+* Developers: Laboratory of Algorithmic, Cryptology and Security (LACS), University of Luxembourg
+* [Official Website](http://vesselinux.github.io/yaarx/)
+* [Official Repository](https://github.com/vesselinux/yaarx)
+
+YAARX provides methods for the computation of the differential probabilities of various ARX operations (XOR, modular addition, multiplication, bit shift, bit rotation) as well as of several larger components built from them. YAARX also provides means to search for high-probability differential trails in ARX algorithms in a fully automatic way. The latter has been a notoriously difficult task for ciphers that do not have S-boxes, such as ARX.
 
 <a name="license"></a>
 # License
