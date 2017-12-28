@@ -29,6 +29,7 @@ The motivation of curating a list of cryptography and cryptanalysis related tool
 19. [CryptoSMT](#cryptosmt)
 20. [YAARX](#yaarx)
 21. [CTF Tool](#RSActf)
+22. [SHA-1 GPU near-collision attacks](#sha_collisions)
 1. [License](#license)
 
 <a name="lineartrails"></a>
@@ -257,10 +258,11 @@ CryptoSMT is an easy to use tool for cryptanalysis of symmetric primitives likes
 
 YAARX provides methods for the computation of the differential probabilities of various ARX operations (XOR, modular addition, multiplication, bit shift, bit rotation) as well as of several larger components built from them. YAARX also provides means to search for high-probability differential trails in ARX algorithms in a fully automatic way. The latter has been a notoriously difficult task for ciphers that do not have S-boxes, such as ARX.
 
-<a name="RSActf"></a>
+
+<a name="alltools"></a>
 ## RSA Tool for CTF
 
-RSA Tool for CTF - Rertives private key from weak public key and/or uncipher the data
+RSA Tool for CTF - Retrives private key from weak public key and/or uncipher the data
 
 *A nice framework that automatically unciphers data from weak public key and try to recover private key using selection of best attacks*
 
@@ -268,6 +270,18 @@ RSA Tool for CTF - Rertives private key from weak public key and/or uncipher the
 * [Official Repository](https://github.com/Ganapati/RsaCtfTool)
 
 Mostly used for Crypto related CTF, this framework allows number of different attacks on the RSA including: Weak public key factorization, Wiener's attack, Small public exponent attack, Small q (q < 100,000), Common factor between ciphertext and modulus attack, Fermat's factorisation for close p and q, Gimmicky Primes method, Self-Initializing Quadratic Sieve (SIQS) using Yafu, Common factor attacks across multiple keys, Small fractions method when p/q is close to a small fraction, Boneh Durfee Method when the private exponent d is too small compared to the modulus (i.e d < n^0.292), Elliptic Curve Method.
+
+
+<a name="sha_collisions"></a>
+## SHA-1 GPU near-collision attacks
+
+*A repository contains the source code for the near collision attacks on SHA-1*
+
+* Developer: Marc Stevens
+* [Official Repository](https://github.com/cr-marcstevens/sha1_gpu_nearcollisionattacks)
+
+The repository that has the sources codes for the SHA-1 collision attacks published in the following papers: [The first collision for full SHA-1](https://eprint.iacr.org/2017/190), [Practical free-start collision attacks on 76-step SHA-1](https://eprint.iacr.org/2015/530) and [Freestart collision for full SHA-1](https://eprint.iacr.org/2015/967).
+
 
 <a name="license"></a>
 # License
