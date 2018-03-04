@@ -31,6 +31,7 @@ The motivation of curating a list of cryptography and cryptanalysis related tool
 21. [CTF Tool](#RSActf)
 22. [SHA-1 GPU near-collision attacks](#sha_collisions)
 23. [Improved Conditional Cube Attacks on Keccak Key Modes with MILP Method](#keccak_milp)
+24. [Conditional Cube Attack on Round-Reduced ASCON](#ascon-test)
 1. [License](#license)
 
 <a name="lineartrails"></a>
@@ -286,12 +287,22 @@ The repository that has the sources codes for the SHA-1 collision attacks publis
 <a name="keccak_milp"></a>
 ## MILP_conditional_cube_attack
 
-*Repository that contains source codes for "Improved Conditional Cube Attacks on Keccak Key Modes with MILP Method"*
+*Repository that contains source codes for `Improved Conditional Cube Attacks on Keccak Key Modes with MILP Method`*
 
 * Developer: Zheng Li
-* [Officia Repository](https://github.com/lizhengcn/MILP_conditional_cube_attack)
+* [Official Repository](https://github.com/lizhengcn/MILP_conditional_cube_attack)
 
 The repository contains the source code for the papers [Improved Conditional Cube Attacks on Keccak Keyed Modes with MILP Method](https://eprint.iacr.org/2017/804.pdf).
+
+<a name="#ascon-test"></a>
+## Ascon test
+
+*Repository that contains source codes for `Conditional Cube Attack on Round-Reduced ASCON`*
+
+* Developer: Zheng Li
+* [Official Repository](https://github.com/lizhengcn/Ascon_test)
+
+The repository contains the source code for the papers [Conditional Cube Attack on Round-Reduced ASCON](https://eprint.iacr.org/2017/160.pdf).
 
 <a name="license"></a>
 # License
