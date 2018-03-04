@@ -30,6 +30,7 @@ The motivation of curating a list of cryptography and cryptanalysis related tool
 20. [YAARX](#yaarx)
 21. [CTF Tool](#RSActf)
 22. [SHA-1 GPU near-collision attacks](#sha_collisions)
+23. [Improved Conditional Cube Attacks on Keccak Key Modes with MILP Method](#keccak_milp)
 1. [License](#license)
 
 <a name="lineartrails"></a>
@@ -282,6 +283,15 @@ Mostly used for Crypto related CTF, this framework allows number of different at
 
 The repository that has the sources codes for the SHA-1 collision attacks published in the following papers: [The first collision for full SHA-1](https://eprint.iacr.org/2017/190), [Practical free-start collision attacks on 76-step SHA-1](https://eprint.iacr.org/2015/530) and [Freestart collision for full SHA-1](https://eprint.iacr.org/2015/967).
 
+<a name="keccak_milp"></a>
+## MILP_conditional_cube_attack
+
+*Repository that contains source codes for "Improved Conditional Cube Attacks on Keccak Key Modes with MILP Method"*
+
+* Developer: Zheng Li
+* [Officia Repository](https://github.com/lizhengcn/MILP_conditional_cube_attack)
+
+The repository contains the source code for the papers [Improved Conditional Cube Attacks on Keccak Keyed Modes with MILP Method](https://eprint.iacr.org/2017/804.pdf).
 
 <a name="license"></a>
 # License
