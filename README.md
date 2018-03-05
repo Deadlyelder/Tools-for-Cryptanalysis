@@ -30,6 +30,9 @@ The motivation of curating a list of cryptography and cryptanalysis related tool
 20. [YAARX](#yaarx)
 21. [CTF Tool](#RSActf)
 22. [SHA-1 GPU near-collision attacks](#sha_collisions)
+23. [Improved Conditional Cube Attacks on Keccak Key Modes with MILP Method](#keccak_milp)
+24. [Conditional Cube Attack on Round-Reduced ASCON](#ascon-test)
+25. [Yoyo Tricks with AES](#yoyo-aes)
 1. [License](#license)
 
 <a name="lineartrails"></a>
@@ -282,6 +285,35 @@ Mostly used for Crypto related CTF, this framework allows number of different at
 
 The repository that has the sources codes for the SHA-1 collision attacks published in the following papers: [The first collision for full SHA-1](https://eprint.iacr.org/2017/190), [Practical free-start collision attacks on 76-step SHA-1](https://eprint.iacr.org/2015/530) and [Freestart collision for full SHA-1](https://eprint.iacr.org/2015/967).
 
+<a name="keccak_milp"></a>
+## MILP_conditional_cube_attack
+
+*Repository that contains source codes for `Improved Conditional Cube Attacks on Keccak Key Modes with MILP Method`*
+
+* Developer: Zheng Li
+* [Official Repository](https://github.com/lizhengcn/MILP_conditional_cube_attack)
+
+The repository contains the source code for the papers [Improved Conditional Cube Attacks on Keccak Keyed Modes with MILP Method](https://eprint.iacr.org/2017/804.pdf).
+
+<a name="#ascon-test"></a>
+## Ascon test
+
+*Repository that contains source codes for `Conditional Cube Attack on Round-Reduced ASCON`*
+
+* Developer: Zheng Li
+* [Official Repository](https://github.com/lizhengcn/Ascon_test)
+
+The repository contains the source code for the papers [Conditional Cube Attack on Round-Reduced ASCON](https://eprint.iacr.org/2017/160.pdf).
+
+<a name="yoyo-aes"></a>
+## Yoyo Tricks with AES
+
+*Code that has implementation of the Yoyo trick attacks on AES*
+
+* Developer: Sondre Rønjom
+* [Official Repository](https://github.com/sondrer/YoyoTricksAES)
+
+The repository contains the source code for the paper [Yoyo Tricks with AES](https://eprint.iacr.org/2017/980.pdf) that was published in AsiaCrypt2017.
 
 <a name="license"></a>
 # License

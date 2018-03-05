@@ -22,3 +22,15 @@
 [submodule "cryptosmt"]
 	path = cryptosmt
 	url = git@github.com:kste/cryptosmt.git
+[submodule "YoyoTricksAES"]
+	path = YoyoTricksAES
+	url = https://github.com/sondrer/YoyoTricksAES
+[submodule "Ascon_test"]
+	path = Ascon_test
+	url = https://github.com/lizhengcn/Ascon_test
+[submodule "MILP_conditional_cube_attack"]
+	path = MILP_conditional_cube_attack
+	url = https://github.com/lizhengcn/MILP_conditional_cube_attack
+[submodule "sha1_gpu_nearcollisionattacks"]
+	path = sha1_gpu_nearcollisionattacks
+	url = https://github.com/cr-marcstevens/sha1_gpu_nearcollisionattacks
