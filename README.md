@@ -32,6 +32,7 @@ The motivation of curating a list of cryptography and cryptanalysis related tool
 22. [SHA-1 GPU near-collision attacks](#sha_collisions)
 23. [Improved Conditional Cube Attacks on Keccak Key Modes with MILP Method](#keccak_milp)
 24. [Conditional Cube Attack on Round-Reduced ASCON](#ascon-test)
+25. [Yoyo Tricks with AES](#yoyo-aes)
 1. [License](#license)
 
 <a name="lineartrails"></a>
@@ -303,6 +304,16 @@ The repository contains the source code for the papers [Improved Conditional Cub
 * [Official Repository](https://github.com/lizhengcn/Ascon_test)
 
 The repository contains the source code for the papers [Conditional Cube Attack on Round-Reduced ASCON](https://eprint.iacr.org/2017/160.pdf).
+
+<a name="yoyo-aes"></a>
+## Yoyo Tricks with AES
+
+*Code that has implementation of the Yoyo trick attacks on AES*
+
+* Developer: Sondre Rønjom
+* [Official Repository](https://github.com/sondrer/YoyoTricksAES)
+
+The repository contains the source code for the paper [Yoyo Tricks with AES](https://eprint.iacr.org/2017/980.pdf) that was published in AsiaCrypt2017.
 
 <a name="license"></a>
 # License
