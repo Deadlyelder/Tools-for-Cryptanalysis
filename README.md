@@ -34,6 +34,7 @@ The motivation of curating a list of cryptography and cryptanalysis related tool
 24. [Conditional Cube Attack on Round-Reduced ASCON](#ascon-test)
 25. [Yoyo Tricks with AES](#yoyo-aes)
 26. [sboxgates](#sboxgates)
+27. [SoCracked key-recovery attack on SoDark](#sodark)
 
 1. [License](#license)
 
@@ -325,8 +326,18 @@ The repository contains the source code for the paper [Yoyo Tricks with AES](htt
 * Developer: Marcus Dansarie
 * [Official Repository](https://github.com/dansarie/sboxgates)
 
-The algorithm used in the program is based on [Kwan, Matthew: "Reducing the Gate Count of Bitslice DES." IACR Cryptology ePrint Archive 2000 (2000): 51](https://ia.cr/2000/051), with other improvements. In addition to finding logic circuits using standard (NOT, AND, OR, XOR) gates, the program also
-supports ANDNOT gates and 3-bit LUTs. 
+The algorithm used in the program is based on [Kwan, Matthew: "Reducing the Gate Count of Bitslice DES." IACR Cryptology ePrint Archive 2000 (2000): 51](https://ia.cr/2000/051), with other improvements. In addition to finding logic circuits using standard (NOT, AND, OR, XOR) gates, the program also supports AND-NOT gates and 3-bit LUTs. 
+
+<a name="socracked"></a>
+## SoCracked
+
+*Performs key-recovery attacks on the SoDark family of algorithms*
+
+* Developer: Marcus Dansarie
+* [Official Repository](https://github.com/dansarie/SoCracked)
+
+SoCracked performs key-recovery attacks on the SoDark family of ciphers for automatic link establishment (ALE) in HF radios specified in MIL-STD-188-141. Based on [Cryptanalysis of the SoDark family of cipher algorithms](https://doi.org/10945/56118).
+
 <a name="license"></a>
 # License
 
