@@ -35,6 +35,7 @@ The motivation of curating a list of cryptography and cryptanalysis related tool
 25. [Yoyo Tricks with AES](#yoyo-aes)
 26. [sboxgates](#sboxgates)
 27. [SoCracked key-recovery attack on SoDark](#sodark)
+28. [Cryptanalysis of ISEA](#isea)
 
 1. [License](#license)
 
@@ -337,6 +338,16 @@ The algorithm used in the program is based on [Kwan, Matthew: "Reducing the Gate
 * [Official Repository](https://github.com/dansarie/SoCracked)
 
 SoCracked performs key-recovery attacks on the SoDark family of ciphers for automatic link establishment (ALE) in HF radios specified in MIL-STD-188-141. Based on [Cryptanalysis of the SoDark family of cipher algorithms](https://doi.org/10945/56118).
+
+<a name="isea"></a>
+## Cryptanalysis of an image scrambling encryption algorithm (ISEA)
+
+*Cryptanalysis of an image scrambling encryption algorithm (ISEA)*
+
+* Developer: Dongdong Lin
+* [Official Repository](https://github.com/MrDongdongLin/Cryptanalysis_ISEA)
+
+The repo contains codes about ciphertext-only attack and known-plaintext attack on ISEA, and codes for calculating Structural Similarity Index (SSIM) of an image based on the paper [Cryptanalyzing an Image-Scrambling Encryption Algorithm of Pixel Bits](http://ieeexplore.ieee.org/document/7999153/)
 
 <a name="license"></a>
 # License
