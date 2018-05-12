@@ -33,6 +33,8 @@ The motivation of curating a list of cryptography and cryptanalysis related tool
 23. [Improved Conditional Cube Attacks on Keccak Key Modes with MILP Method](#keccak_milp)
 24. [Conditional Cube Attack on Round-Reduced ASCON](#ascon-test)
 25. [Yoyo Tricks with AES](#yoyo-aes)
+26. [sboxgates](#sboxgates)
+
 1. [License](#license)
 
 <a name="lineartrails"></a>
@@ -315,6 +317,16 @@ The repository contains the source code for the papers [Conditional Cube Attack 
 
 The repository contains the source code for the paper [Yoyo Tricks with AES](https://eprint.iacr.org/2017/980.pdf) that was published in AsiaCrypt2017.
 
+<a name="sboxgates"></a>
+## sboxgates
+
+*Program for finidng low gate count implementations of S-Boxes*
+
+* Developer: Marcus Dansarie
+* [Official Repository](https://github.com/dansarie/sboxgates)
+
+The algorithm used in the program is based on [Kwan, Matthew: "Reducing the Gate Count of Bitslice DES." IACR Cryptology ePrint Archive 2000 (2000): 51](https://ia.cr/2000/051), with other improvements. In addition to finding logic circuits using standard (NOT, AND, OR, XOR) gates, the program also
+supports ANDNOT gates and 3-bit LUTs. 
 <a name="license"></a>
 # License
 
