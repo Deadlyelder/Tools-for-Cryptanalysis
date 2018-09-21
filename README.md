@@ -37,6 +37,7 @@ The motivation of curating a list of cryptography and cryptanalysis related tool
 27. [SoCracked key-recovery attack on SoDark](#sodark)
 28. [Cryptanalysis of ISEA](#isea)
 29. [Bucketing Computational Analysis Attack](#bca)
+30. [SPARX Differential Attacks](#sparxda)
 
 1. [License](#license)
 
@@ -359,6 +360,16 @@ The repo contains codes about ciphertext-only attack and known-plaintext attack 
 * [Official Repository](https://github.com/Bucketing/BCA-attack)
 
 The repository contains the core implementation of the Bucketing Computational Analysis (BCA) and some public white-box cryptographic implementations and the coressponding scripts to perform the BCA.
+
+<a name="sparxdfa"</a>
+## SPARX Differential Attacks
+
+*Repository for the differential Cryptanalysis of Round-Reduced Sparx 64/128*
+
+* Developer: Ralph Ankele
+* [Official Repository](https://github.com/TheBananaMan/sparx-differential-attacks)
+
+The repository contains implementation of the paper [Differential Cryptanalysis of Round-Reduced Sparx-64/128](https://eprint.iacr.org/2018/332) that was presented at ACNS 2018.
 
 <a name="license"></a>
 # License
