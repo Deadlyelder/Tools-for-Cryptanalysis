@@ -361,7 +361,7 @@ The repo contains codes about ciphertext-only attack and known-plaintext attack 
 
 The repository contains the core implementation of the Bucketing Computational Analysis (BCA) and some public white-box cryptographic implementations and the coressponding scripts to perform the BCA.
 
-<a name="sparxdfa"</a>
+<a name="sparxdfa"></a>
 ## SPARX Differential Attacks
 
 *Repository for the differential Cryptanalysis of Round-Reduced Sparx 64/128*
