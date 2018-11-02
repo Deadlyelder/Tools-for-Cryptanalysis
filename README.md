@@ -39,6 +39,7 @@ The motivation of curating a list of cryptography and cryptanalysis related tool
 29. [Bucketing Computational Analysis Attack](#bca)
 30. [SPARX Differential Attacks](#sparxda)
 31. [Attack on 721-round Trivium](#trivium)
+32. [MILP on SPECK](#milp-speck)
 
 1. [License](#license)
 
@@ -371,7 +372,7 @@ The repository contains the core implementation of the Bucketing Computational A
 * [Official Repository](https://github.com/TheBananaMan/sparx-differential-attacks)
 
 The repository contains implementation of the paper [Differential Cryptanalysis of Round-Reduced Sparx-64/128](https://eprint.iacr.org/2018/332) that was presented at ACNS 2018.
-i
+
 <a name="trivium"></a>
 ## Attack on 721-round Trivium
 
@@ -379,6 +380,15 @@ i
 * [Official Repository](https://github.com/peterhao89/Analyze721Trivium)
 
 Contains the implementation of a key recovery attack on Trivium cipher. Based on the paper [A Key-recovery Attack on 855-round Trivium](https://eprint.iacr.org/2018/198) accepted for Crypto 2018.
+
+
+<a name="milp-speck"></a>
+## MILP on SpECK
+
+* Developer: Kai Fu
+* [Official Repository](https://github.com/fukai6/milp_speck)
+ 
+The `speck_diff_find` and `speck_line_find` within this repository are the Python framework for automatic differential and linear cryptanalysis based on the paper\ ["MILP-Based Automatic Search Algorithms for Differential and Linear Trails for Speck"](https://www.iacr.org/archive/fse2016/97830255/97830255.pdf)
 
 <a name="license"></a>
 # License
