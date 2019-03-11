@@ -42,6 +42,7 @@ The motivation of curating a list of cryptography and cryptanalysis related tool
 32. [MILP on SPECK](#milp-speck)
 33. [SoCracked](#socracked)
 34. [Peigen SBoxes](#peigen)
+35. [Cryptanalysis of Persichetti's One-Time Signature (OTS)](#ots)
 
 1. [License](#license)
 
@@ -411,6 +412,16 @@ This program performs key-recovery attacks on the SoDark family of ciphers for a
 * [Official Repository](https://github.com/peigen-sboxes/PEIGEN)
  
 PEIGEN is a tool for study S-boxes. The S-box is a type of non-linearity cryptographic component, commonly used in symmetric cryptography primitives. A survey on studies of S-boxes and a formal introduction of PEIGEN can be found in the paper [SoK: Peigen – a Platform for Evaluation, Implementation, and Generation of S-boxes](https://eprint.iacr.org/2019/209).
+
+<a name="ots"></a>
+## Cryptanalysis of Persichetti's One-Time Signature (OTS)
+
+*Cryptanalysis of Persichetti OTS based on quasi-cyclic codes*
+
+* Developer: [Deneuville Jean-Christophe](http://www-perso.unilim.fr/deneuville/)
+* [Official Repository](https://github.com/deneuville/PersichettiOTScryptanalysis)
+ 
+ Implementation of the cryptanalysis of the OTS proposed by Persichetti in the paper [Efficient One-Time Signatures from Quasi-Cyclic Codes: a Full Treatment](https://eprint.iacr.org/2017/397). The cryptanalysis is described in the paper [Cryptanalysis of a code-based one-time signature](https://eprint.iacr.org/2018/1205).
 
 <a name="license"></a>
 # License
