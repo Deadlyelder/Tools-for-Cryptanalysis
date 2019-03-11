@@ -41,6 +41,7 @@ The motivation of curating a list of cryptography and cryptanalysis related tool
 31. [Attack on 721-round Trivium](#trivium)
 32. [MILP on SPECK](#milp-speck)
 33. [SoCracked](#socracked)
+34. [Peigen SBoxes](#peigen)
 
 1. [License](#license)
 
@@ -400,6 +401,16 @@ The `speck_diff_find` and `speck_line_find` within this repository are the Pytho
 * [Official Repository](https://github.com/dansarie/SoCracked)
  
 This program performs key-recovery attacks on the SoDark family of ciphers for automatic link establishment (ALE) in HF radios specified in MIL-STD-188-141. Based on the thesis [Cryptanalysis of the SoDark family of cipher algorithms](https://calhoun.nps.edu/handle/10945/56118).
+
+<a name="peigen"></a>
+## PEIGEN
+
+*PEIGEN: a Platform for Evaluation, Implementation, and Generation of S-boxes*
+
+* Developer: [Project](https://github.com/peigen-sboxes)
+* [Official Repository](https://github.com/peigen-sboxes/PEIGEN)
+ 
+PEIGEN is a tool for study S-boxes. The S-box is a type of non-linearity cryptographic component, commonly used in symmetric cryptography primitives. A survey on studies of S-boxes and a formal introduction of PEIGEN can be found in the paper [SoK: Peigen – a Platform for Evaluation, Implementation, and Generation of S-boxes](https://eprint.iacr.org/2019/209).
 
 <a name="license"></a>
 # License
