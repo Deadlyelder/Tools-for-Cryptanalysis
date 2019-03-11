@@ -40,6 +40,7 @@ The motivation of curating a list of cryptography and cryptanalysis related tool
 30. [SPARX Differential Attacks](#sparxda)
 31. [Attack on 721-round Trivium](#trivium)
 32. [MILP on SPECK](#milp-speck)
+33. [SoCracked](#socracked)
 
 1. [License](#license)
 
@@ -389,6 +390,16 @@ Contains the implementation of a key recovery attack on Trivium cipher. Based on
 * [Official Repository](https://github.com/fukai6/milp_speck)
  
 The `speck_diff_find` and `speck_line_find` within this repository are the Python framework for automatic differential and linear cryptanalysis based on the paper\ ["MILP-Based Automatic Search Algorithms for Differential and Linear Trails for Speck"](https://www.iacr.org/archive/fse2016/97830255/97830255.pdf)
+
+<a name="socracked"></a>
+## SoCracked
+
+*Program to perform key-recovery attacks on the SoDark family of algorithms.*
+
+* Developer: [Marcus Dansarie](https://github.com/dansarie)
+* [Official Repository](https://github.com/dansarie/SoCracked)
+ 
+This program performs key-recovery attacks on the SoDark family of ciphers for automatic link establishment (ALE) in HF radios specified in MIL-STD-188-141. Based on the thesis [Cryptanalysis of the SoDark family of cipher algorithms](https://calhoun.nps.edu/handle/10945/56118).
 
 <a name="license"></a>
 # License
