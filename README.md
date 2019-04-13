@@ -43,6 +43,7 @@ The motivation of curating a list of cryptography and cryptanalysis related tool
 33. [SoCracked](#socracked)
 34. [Peigen SBoxes](#peigen)
 35. [Cryptanalysis of Persichetti's One-Time Signature (OTS)](#ots)
+36. [Key-dependent cube attack on Frit-AE](#frit)
 
 1. [License](#license)
 
@@ -422,6 +423,13 @@ PEIGEN is a tool for study S-boxes. The S-box is a type of non-linearity cryptog
 * [Official Repository](https://github.com/deneuville/PersichettiOTScryptanalysis)
  
  Implementation of the cryptanalysis of the OTS proposed by Persichetti in the paper [Efficient One-Time Signatures from Quasi-Cyclic Codes: a Full Treatment](https://eprint.iacr.org/2017/397). The cryptanalysis is described in the paper [Cryptanalysis of a code-based one-time signature](https://eprint.iacr.org/2018/1205).
+
+<a name="frit"></a>
+## Key-dependent cube attack on Frit-AE
+
+* [Official Repository](https://github.com/qly14/FritAE)
+ 
+Implementation of the Key-dependent cube attack based on the paper by [Key-dependent cube attack on reduced Frit permutation in Duplex-AE modes](https://eprint.iacr.org/2019/170).
 
 <a name="license"></a>
 # License
