@@ -44,6 +44,7 @@ The motivation of curating a list of cryptography and cryptanalysis related tool
 34. [Peigen SBoxes](#peigen)
 35. [Cryptanalysis of Persichetti's One-Time Signature (OTS)](#ots)
 36. [Key-dependent cube attack on Frit-AE](#frit)
+37. [Extended Expectation Cryptanalysis on Round-reduced AES and Small-AES](#reduce-aes)
 
 1. [License](#license)
 
@@ -430,6 +431,14 @@ PEIGEN is a tool for study S-boxes. The S-box is a type of non-linearity cryptog
 * [Official Repository](https://github.com/qly14/FritAE)
  
 Implementation of the Key-dependent cube attack based on the paper by [Key-dependent cube attack on reduced Frit permutation in Duplex-AE modes](https://eprint.iacr.org/2019/170).
+
+
+<a name="reduce-aes"></a>
+## Extended Expectation Cryptanalysis on Round-reduced AES and Small-AES
+
+* [Official Repository](https://github.com/medsec/expectation-cryptanalysis-on-round-reduced-aes)
+ 
+Implementation of expectation cryptanalysis on round-reduced AES and its small-scale version based on the paper [Small Scale Variants of the AES](https://link.springer.com/content/pdf/10.1007/11502760_10.pdf).
 
 <a name="license"></a>
 # License
