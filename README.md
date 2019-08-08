@@ -45,6 +45,7 @@ The motivation of curating a list of cryptography and cryptanalysis related tool
 35. [Cryptanalysis of Persichetti's One-Time Signature (OTS)](#ots)
 36. [Key-dependent cube attack on Frit-AE](#frit)
 37. [Extended Expectation Cryptanalysis on Round-reduced AES and Small-AES](#reduce-aes)
+38. [Cryptanalysis of MORUS](#morus)
 
 1. [License](#license)
 
@@ -439,6 +440,15 @@ Implementation of the Key-dependent cube attack based on the paper by [Key-depen
 * [Official Repository](https://github.com/medsec/expectation-cryptanalysis-on-round-reduced-aes)
  
 Implementation of expectation cryptanalysis on round-reduced AES and its small-scale version based on the paper [Small Scale Variants of the AES](https://link.springer.com/content/pdf/10.1007/11502760_10.pdf).
+
+<a name="morus"></a>
+## Cryptanalysis of MORUS
+
+*Correlation of Quadratic Boolean Functions: Cryptanalysis of All Versions of Full MORUS*
+
+* [Official Repository](https://github.com/siweisun/attack_morus)
+ 
+Implementation of cryptanalysis on MORUS cipher using coreelation of quadratic boolean function. Based on the paper [Correlation of Quadratic Boolean Functions: Cryptanalysis of All Versions of Full MORUS](https://eprint.iacr.org/2019/172).
 
 <a name="license"></a>
 # License
