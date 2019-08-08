@@ -447,6 +447,7 @@ Implementation of expectation cryptanalysis on round-reduced AES and its small-s
 *Correlation of Quadratic Boolean Functions: Cryptanalysis of All Versions of Full MORUS*
 
 * [Official Repository](https://github.com/siweisun/attack_morus)
+* Developer:[Siwei Sun](https://siweisun.github.io/)
  
 Implementation of cryptanalysis on MORUS cipher using coreelation of quadratic boolean function. Based on the paper [Correlation of Quadratic Boolean Functions: Cryptanalysis of All Versions of Full MORUS](https://eprint.iacr.org/2019/172).
 
