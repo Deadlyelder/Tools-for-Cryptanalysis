@@ -46,6 +46,7 @@ The motivation of curating a list of cryptography and cryptanalysis related tool
 36. [Key-dependent cube attack on Frit-AE](#frit)
 37. [Extended Expectation Cryptanalysis on Round-reduced AES and Small-AES](#reduce-aes)
 38. [Cryptanalysis of MORUS](#morus)
+39. [Boomerang probablities on Kiasu-BC](#kaisu)
 
 1. [License](#license)
 
@@ -450,6 +451,15 @@ Implementation of expectation cryptanalysis on round-reduced AES and its small-s
 * Developer:[Siwei Sun](https://siweisun.github.io/)
  
 Implementation of cryptanalysis on MORUS cipher using coreelation of quadratic boolean function. Based on the paper [Correlation of Quadratic Boolean Functions: Cryptanalysis of All Versions of Full MORUS](https://eprint.iacr.org/2019/172).
+
+<a name="kaisu"></a>
+## Boomerang probablities on Kiasu-BC
+
+*Implementation of boomerang probabilities attack on Kiasu-BC*
+
+* [Official Repository](https://github.com/medsec/kiasubc)
+ 
+Three implementations that aims to validate the 6 and 7 round boomerang distinguishers on Kiasu-BC. Based on the paper [Impossible-Differential and Boomerang Cryptanalysis of Round-Reduced Kiasu-BC](https://eprint.iacr.org/2016/1170).
 
 <a name="license"></a>
 # License
