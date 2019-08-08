@@ -47,6 +47,7 @@ The motivation of curating a list of cryptography and cryptanalysis related tool
 37. [Extended Expectation Cryptanalysis on Round-reduced AES and Small-AES](#reduce-aes)
 38. [Cryptanalysis of MORUS](#morus)
 39. [Boomerang probablities on Kiasu-BC](#kaisu)
+40. [Mixture Integral Attacks on Reduced-Round AES](#aes-mixint)
 
 1. [License](#license)
 
@@ -460,6 +461,16 @@ Implementation of cryptanalysis on MORUS cipher using coreelation of quadratic b
 * [Official Repository](https://github.com/medsec/kiasubc)
  
 Three implementations that aims to validate the 6 and 7 round boomerang distinguishers on Kiasu-BC. Based on the paper [Impossible-Differential and Boomerang Cryptanalysis of Round-Reduced Kiasu-BC](https://eprint.iacr.org/2016/1170).
+
+<a name="mixint"></a>
+## Mixture Integral Attacks on Reduced-Round AES
+
+*Low-data mixture integral distinguishers and attacks on reduced-round AES*
+
+* Developer: [Markus Schofnegger](https://www.iaik.tugraz.at/content/about_iaik/people/schofnegger_markus/)
+* [Official Repository](https://github.com/mschof/aes-mixint-analysis)
+ 
+Implementation of Low-data mixture integral distinguishers and later attack on reduced-round AES. Based on the paper [IMixture Integral Attacks on Reduced-Round AES with a Known/Secret S-Box](https://eprint.iacr.org/2019/772).
 
 <a name="license"></a>
 # License
