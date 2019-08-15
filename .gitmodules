@@ -34,3 +34,9 @@
 [submodule "sha1_gpu_nearcollisionattacks"]
 	path = sha1_gpu_nearcollisionattacks
 	url = https://github.com/cr-marcstevens/sha1_gpu_nearcollisionattacks
+[submodule "CRAFT-Integral-Distinguisher"]
+	path = CRAFT-Integral-Distinguisher
+	url = https://github.com/hadipourh/CRAFT-Integral-Distinguisher
+[submodule "MIBS-Integral-Cryptanalysis-Basd-on-Division-Property"]
+	path = MIBS-Integral-Cryptanalysis-Basd-on-Division-Property
+	url = https://github.com/hadipourh/MIBS-Integral-Cryptanalysis-Basd-on-Division-Property
