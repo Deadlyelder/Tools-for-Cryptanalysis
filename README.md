@@ -48,6 +48,8 @@ The motivation of curating a list of cryptography and cryptanalysis related tool
 38. [Cryptanalysis of MORUS](#morus)
 39. [Boomerang probablities on Kiasu-BC](#kaisu)
 40. [Mixture Integral Attacks on Reduced-Round AES](#aes-mixint)
+41. [Integral Cryptanalysis of CRAFT](#craft-integral)
+42. [Integral Cryptanalysis of MIBS](#mibs-integral)
 
 1. [License](#license)
 
@@ -471,6 +473,26 @@ Three implementations that aims to validate the 6 and 7 round boomerang distingu
 * [Official Repository](https://github.com/mschof/aes-mixint-analysis)
  
 Implementation of Low-data mixture integral distinguishers and later attack on reduced-round AES. Based on the paper [IMixture Integral Attacks on Reduced-Round AES with a Known/Secret S-Box](https://eprint.iacr.org/2019/772).
+
+<a name="craft-integral"></a>
+## Integral Cryptanalysis of CRAFT
+
+*Applying MILP method to find integral distinguisher for CRAFT*
+
+* Developer: [Hosein Hadipour](https://github.com/hadipourh)
+* [Official Repository](https://github.com/hadipourh/CRAFT-Integral-Distinguisher)
+ 
+This tool is used to find integral distinguisher based on division property for [CRAFT](https://tosc.iacr.org/index.php/ToSC/article/view/7396).
+
+<a name="craft-integral"></a>
+## Integral Cryptanalysis and Degree Estimation of MIBS
+
+*Applying MILP method to find integral distinguisher for MIBS*
+
+* Developer: [Hosein Hadipour](https://github.com/hadipourh)
+* [Official Repository](https://github.com/hadipourh/MIBS-Integral-Cryptanalysis-Basd-on-Division-Propertyr)
+ 
+Applying the MILP method to search bit-based integral distinguishers, and degree estimation of [MIBS](https://link.springer.com/chapter/10.1007%2F978-3-642-10433-6_22) block cipher, using division property.
 
 <a name="license"></a>
 # License
