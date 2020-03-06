@@ -40,3 +40,6 @@
 [submodule "MIBS-Integral-Cryptanalysis-Basd-on-Division-Property"]
 	path = MIBS-Integral-Cryptanalysis-Basd-on-Division-Property
 	url = https://github.com/hadipourh/MIBS-Integral-Cryptanalysis-Basd-on-Division-Property
+[submodule "sboxoptimization"]
+	path = sboxoptimization
+	url = https://github.com/Ko-/sboxoptimization
