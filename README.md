@@ -50,6 +50,7 @@ The motivation of curating a list of cryptography and cryptanalysis related tool
 40. [Mixture Integral Attacks on Reduced-Round AES](#aes-mixint)
 41. [Integral Cryptanalysis of CRAFT](#craft-integral)
 42. [Integral Cryptanalysis of MIBS](#mibs-integral)
+43. [Sboxoptimization](#sboxoptimization)
 
 1. [License](#license)
 
@@ -484,15 +485,25 @@ Implementation of Low-data mixture integral distinguishers and later attack on r
  
 This tool is used to find integral distinguisher based on division property for [CRAFT](https://tosc.iacr.org/index.php/ToSC/article/view/7396).
 
-<a name="craft-integral"></a>
+<a name="mibs-integral"></a>
 ## Integral Cryptanalysis and Degree Estimation of MIBS
 
 *Applying MILP method to find integral distinguisher for MIBS*
 
 * Developer: [Hosein Hadipour](https://github.com/hadipourh)
-* [Official Repository](https://github.com/hadipourh/MIBS-Integral-Cryptanalysis-Basd-on-Division-Propertyr)
+* [Official Repository](https://github.com/hadipourh/MIBS-Integral-Cryptanalysis-Basd-on-Division-Property)
  
 Applying the MILP method to search bit-based integral distinguishers, and degree estimation of [MIBS](https://link.springer.com/chapter/10.1007%2F978-3-642-10433-6_22) block cipher, using division property.
+
+<a name="sboxoptimization"></a>
+## S-box optimization using SAT solvers
+
+*Tools to optimize small functions, such as S-boxes, for several criteria using SAT solvers*
+
+* Developer: [Ko Stoffelen](https://github.com/Ko-)
+* [Official Repository](https://github.com/Ko-/sboxoptimization)
+ 
+These tools are part of the paper "Optimizing S-box Implementations for Several Criteria using SAT Solvers" by Ko Stoffelen, published at FSE 2016, available [here](https://ko.stoffelen.nl/papers/fse2016-sboxoptimization.pdf).
 
 <a name="license"></a>
 # License
