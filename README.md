@@ -51,6 +51,7 @@ The motivation of curating a list of cryptography and cryptanalysis related tool
 41. [Integral Cryptanalysis of CRAFT](#craft-integral)
 42. [Integral Cryptanalysis of MIBS](#mibs-integral)
 43. [Sboxoptimization](#sboxoptimization)
+44. [Craftanalysis](#craftanalaysis)
 
 1. [License](#license)
 
@@ -262,7 +263,7 @@ An increasing number of cryptographic primitives use operations such as addition
 
 *A tool for cryptanalysis of symmetric primitives like block ciphers and hash functions*
 
-* Developers: Stefan Kölbl
+* Developers: [Stefan Kölbl](https://kste.dk/)
 * [Official Website](http://www2.compute.dtu.dk/%7Estek/cryptosmt.html)
 * [Official Repository](https://github.com/kste/cryptosmt)
 * [Location within this repo](https://github.com/kste/cryptosmt/tree/62ecf615eab0cb3e1b966c2d80a03b16687cf670)
@@ -504,6 +505,16 @@ Applying the MILP method to search bit-based integral distinguishers, and degree
 * [Official Repository](https://github.com/Ko-/sboxoptimization)
  
 These tools are part of the paper "Optimizing S-box Implementations for Several Criteria using SAT Solvers" by Ko Stoffelen, published at FSE 2016, available [here](https://ko.stoffelen.nl/papers/fse2016-sboxoptimization.pdf).
+
+<a name="craftanalysis"></a>
+## Comprehensive Security Analysis of CRAFT
+
+*Applying SAT-based and MILP-based methods to cryptanalysis of CRAFT*
+
+* Developer: [Hosein Hadipour](https://github.com/hadipourh)
+* [Official Repository](https://github.com/hadipourh/craftanalysis)
+ 
+[CRAFT](https://sites.google.com/view/craftcipher/home) is a light-weight tweakable block cipher, designed with efficient protection against differential fault attacks ([DFA](https://en.wikipedia.org/wiki/Differential_fault_analysis)) in mind from design phase. This repository complements [this paper](https://tosc.iacr.org/index.php/ToSC/article/view/8466) which has been accpted to the [FSE-2020](https://fse.iacr.org/2020/index.html).
 
 <a name="license"></a>
 # License
