@@ -43,3 +43,6 @@
 [submodule "sboxoptimization"]
 	path = sboxoptimization
 	url = https://github.com/Ko-/sboxoptimization
+[submodule "craftanalysis"]
+	path = craftanalysis
+	url = https://github.com/hadipourh/craftanalysis
