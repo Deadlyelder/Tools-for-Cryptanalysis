@@ -50,6 +50,8 @@ The motivation of curating a list of cryptography and cryptanalysis related tool
 40. [Mixture Integral Attacks on Reduced-Round AES](#aes-mixint)
 41. [Integral Cryptanalysis of CRAFT](#craft-integral)
 42. [Integral Cryptanalysis of MIBS](#mibs-integral)
+43. [Sboxoptimization](#sboxoptimization)
+44. [Craftanalysis](#craftanalysis)
 
 1. [License](#license)
 
@@ -261,7 +263,7 @@ An increasing number of cryptographic primitives use operations such as addition
 
 *A tool for cryptanalysis of symmetric primitives like block ciphers and hash functions*
 
-* Developers: Stefan Kölbl
+* Developers: [Stefan Kölbl](https://kste.dk/)
 * [Official Website](http://www2.compute.dtu.dk/%7Estek/cryptosmt.html)
 * [Official Repository](https://github.com/kste/cryptosmt)
 * [Location within this repo](https://github.com/kste/cryptosmt/tree/62ecf615eab0cb3e1b966c2d80a03b16687cf670)
@@ -484,15 +486,35 @@ Implementation of Low-data mixture integral distinguishers and later attack on r
  
 This tool is used to find integral distinguisher based on division property for [CRAFT](https://tosc.iacr.org/index.php/ToSC/article/view/7396).
 
-<a name="craft-integral"></a>
+<a name="mibs-integral"></a>
 ## Integral Cryptanalysis and Degree Estimation of MIBS
 
 *Applying MILP method to find integral distinguisher for MIBS*
 
 * Developer: [Hosein Hadipour](https://github.com/hadipourh)
-* [Official Repository](https://github.com/hadipourh/MIBS-Integral-Cryptanalysis-Basd-on-Division-Propertyr)
+* [Official Repository](https://github.com/hadipourh/MIBS-Integral-Cryptanalysis-Basd-on-Division-Property)
  
 Applying the MILP method to search bit-based integral distinguishers, and degree estimation of [MIBS](https://link.springer.com/chapter/10.1007%2F978-3-642-10433-6_22) block cipher, using division property.
+
+<a name="sboxoptimization"></a>
+## S-box optimization using SAT solvers
+
+*Tools to optimize small functions, such as S-boxes, for several criteria using SAT solvers*
+
+* Developer: [Ko Stoffelen](https://github.com/Ko-)
+* [Official Repository](https://github.com/Ko-/sboxoptimization)
+ 
+These tools are part of the paper "Optimizing S-box Implementations for Several Criteria using SAT Solvers" by Ko Stoffelen, published at FSE 2016, available [here](https://ko.stoffelen.nl/papers/fse2016-sboxoptimization.pdf).
+
+<a name="craftanalysis"></a>
+## Comprehensive Security Analysis of CRAFT
+
+*Differential, Zero-Correlation, and Integral cryptanalysis of CRAFT*
+
+* Developer: [Hosein Hadipour](https://github.com/hadipourh)
+* [Official Repository](https://github.com/hadipourh/craftanalysis)
+ 
+[CRAFT](https://sites.google.com/view/craftcipher/home) is a light-weight tweakable block cipher, designed with efficient protection against differential fault attacks ([DFA](https://en.wikipedia.org/wiki/Differential_fault_analysis)) in mind from design phase. This repository complements [this paper](https://tosc.iacr.org/index.php/ToSC/article/view/8466) which has been accpted to the [FSE-2020](https://fse.iacr.org/2020/index.html).
 
 <a name="license"></a>
 # License
