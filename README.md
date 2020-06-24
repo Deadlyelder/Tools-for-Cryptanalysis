@@ -509,7 +509,7 @@ These tools are part of the paper "Optimizing S-box Implementations for Several 
 <a name="craftanalysis"></a>
 ## Comprehensive Security Analysis of CRAFT
 
-*Applying SAT-based and MILP-based methods to cryptanalysis of CRAFT*
+*Differential, Zero-Correlation, and Integral cryptanalysis of CRAFT*
 
 * Developer: [Hosein Hadipour](https://github.com/hadipourh)
 * [Official Repository](https://github.com/hadipourh/craftanalysis)
