@@ -51,7 +51,7 @@ The motivation of curating a list of cryptography and cryptanalysis related tool
 41. [Integral Cryptanalysis of CRAFT](#craft-integral)
 42. [Integral Cryptanalysis of MIBS](#mibs-integral)
 43. [Sboxoptimization](#sboxoptimization)
-44. [Craftanalysis](#craftanalaysis)
+44. [Craftanalysis](#craftanalysis)
 
 1. [License](#license)
 
